@@ -1,0 +1,45 @@
+site_name: My site
+site_url: https://example.com
+
+nav:
+  - 主页: 
+      - 社交账号: home/accounts.md
+      - 近期新增: home/newBlog.md
+  - 游记:
+      - 旅行的意义: travelogue/index.md
+      - 2024: 
+          - 2024 ICPC 南京: travelogue/2024icpc南京.md
+          - 2024 ICPC 杭州: travelogue/2024icpc杭州.md
+      - 2025:
+          - 2025 ICPC 武汉: travelogue/2025icpc武汉.md
+          - 2025 ICPC 沈阳: travelogue/2025icpc沈阳.md
+          - 2025 CCPC 重庆: travelogue/2025ccpc重庆.md
+  - 图论:
+      - 最短路: graph/shortest-way.md
+  - 数学: 
+      - 拉格朗日插值: math/lagrange-interpolation.md
+  - 数据结构:
+      - 线段树: data-structure/segment-tree.md
+  - 字符串: 
+      - Manacher: string/manacher.md
+  - 几何: 
+      - 凸包: geometry/convex-hull.md
+
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    code: Roboto Mono
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.expand
