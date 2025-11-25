@@ -1578,26 +1578,41 @@
 
 
 <h1 id="146">牛客练习赛 146</h1>
-<p>主包这次超常发挥 rk8 , 可喜可贺, 离橙名又进一步!</p>
+<p>主包这次超常发挥 rk8, 可喜可贺, 离橙名又进一步!</p>
 <h2 id="a">A</h2>
-<p>将所有机器大于 1 的硬币取出, 即 $tot = \sum_{i=1}^n a_i - 1$, 如果 $tot \ge n$ 且 $(tot - n) \% 2 = 0$ , 就有解.</p>
+<p>将所有机器大于 1 的硬币取出, 即</p>
+<div class="arithmatex">\[\mathrm{tot}=\sum_{i=1}^n a_i-1\]</div>
+<p>如果</p>
+<div class="arithmatex">\[\mathrm{tot}\ge n\quad\text{且}\quad (\mathrm{tot}-n)\equiv0\pmod{2},\]</div>
+<p>就有解.</p>
+<p><a href="https://ac.nowcoder.com/acm/contest/view-submission?submissionId=80665940">提交记录</a></p>
 <h2 id="b">B</h2>
 <p>可以通过二分确定每一天能够收集哪个区间的学分, 对于这个区间, 可以用前缀和维护最大值和次大值.</p>
+<p><a href="https://ac.nowcoder.com/acm/contest/view-submission?submissionId=80666595">提交记录</a></p>
 <h2 id="c">C</h2>
-<p>某些时刻小灰灰的位置是确定的, 列举出所有已经确定的位置, 考虑这些位置的距离奇偶性以及是否在同一侧, 可以发现两者之间为止部分的跳跃次数是 0, 3, 5 ... 或者 2, 4, 6... 即一段奇数或者一段偶数.</p>
+<p>某些时刻小灰灰的位置是确定的, 列举出所有已经确定的位置, 考虑这些位置的距离奇偶性以及是否在同一侧, 可以发现两者之间为止部分的跳跃次数是</p>
+<div class="arithmatex">\[0,3,5,\ldots\]</div>
+<p>或者</p>
+<div class="arithmatex">\[2,4,6,\ldots\]</div>
+<p>即一段奇数或者一段偶数.</p>
 <p>值得注意的是, 最后一个区间的贡献是连续整数.</p>
 <p>考虑到贡献为奇数的区间至少有 1 的贡献, 且只会改变一次总贡献的奇偶性, 我们可以通过奇偶性判断有没有解. 此外, 还需判断最大可能跳跃次数是否大于等于目标次数.</p>
+<p><a href="https://ac.nowcoder.com/acm/contest/view-submission?submissionId=80670784">提交记录</a></p>
 <h2 id="d">D</h2>
 <p>比较经典的两个关键字的最短路问题.</p>
-<p>题目要求我们最小化操作三的次数, 不妨以操作三的次数为第一关键字, 那么, 如果指令集 s 中没有某个方向, 我们就把其代价定义为 1, 否则为 0.</p>
-<p>以时间为第二关键字, 显然第一关键字相同的情况下, 时间越小越优. 而且, 如果知道当前时间, 我们就可以计算出下一个需要的字符再次出现的时间, 这个东西显然可以线性预处理.</p>
+<p>题目要求我们最小化操作三的次数, 不妨以操作三的次数为第一关键字, 那么, 如果指令集 <span class="arithmatex">\(s\)</span> 中没有某个方向, 我们就把其代价定义为 1, 否则为 0.</p>
+<p>以时间为第二关键字, 显然第一关键字相同的情况下, 时间越小越优. 而且, 如果知道当前时间, 我们就可以计算出下一个需要的字符再次出现的时间, 这东西显然可以线性预处理.</p>
+<p><a href="https://ac.nowcoder.com/acm/contest/view-submission?submissionId=80674422">提交记录</a></p>
 <h2 id="e">E</h2>
 <p>很有意思的题.</p>
-<p>显然我们可以二分找出某次操作技术后, 区间中的最小值, 这样复杂度是带 log 的, 无法通过, 不过这启示我们寻找线形的做法.</p>
-<p>考虑二分的过程, 如果某次二分后, 指针向大的方向移动, 那么下次 check 时我们不需要再重新计算左侧区间的贡献, 因为可以直接用这次 check 计算出的结果. 指针向小的方向移动是同理的, 更大的数字不需要再考虑了. 于是, 我们可以每次都取当前保留的区间的中位数, 然后将区间大小不断折半, 最终, 时间复杂度是线性的.</p>
-<p>可以用 nth_element 实现, 注意慎用 vector , 尽量手写栈, 本题卡常.</p>
+<p>显然我们可以二分找出某次操作之后区间中的最小值, 这样复杂度是带 <span class="arithmatex">\(\log\)</span> 的, 无法通过, 但这启示我们寻找线性的做法.</p>
+<p>考虑二分的过程, 如果某次二分后, 指针向大的方向移动, 那么下次 check 时我们不需要再重新计算左侧区间的贡献, 因为可以直接用这次 check 计算出的结果. 指针向小的方向移动是同理, 更大的数字不需要再考虑了. 于是, 我们可以每次都取当前保留的区间的中位数, 然后将区间大小不断折半, 最终, 时间复杂度是线性的.</p>
+<p>可以用 <code>nth_element</code> 实现, 注意慎用 vector, 尽量手写栈, 本题卡常.</p>
+<p><a href="https://ac.nowcoder.com/acm/contest/view-submission?submissionId=80677012">提交记录</a></p>
 <h2 id="f">F</h2>
 <p>本题有原.</p>
+<p><a href="https://ac.nowcoder.com/acm/contest/view-submission?submissionId=80681947">提交记录</a></p>
+<p>目前是站内最优解.</p>
 
 
 
@@ -1657,6 +1672,10 @@
     
     
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
