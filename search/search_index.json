@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"],"fields":{"title":{"boost":1000.0},"text":{"boost":1.0},"tags":{"boost":1000000.0}}},"docs":[{"location":"travelogue/","title":"\u65c5\u884c\u7684\u610f\u4e49","text":"<p>\u65c5\u884c\u7684\u610f\u4e49</p>"}]}
