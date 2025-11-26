@@ -3,7 +3,7 @@ site_url: https://carboxylbase.github.io/
 
 nav:
   - 主页: 
-      - 社交账号: home/accounts.md
+      - 社交账号: index.md
   - 游记:
       - 旅行的意义: travelogue/index.md
       - 2024: 
@@ -15,7 +15,7 @@ nav:
           - 2025 CCPC 重庆: travelogue/2025ccpc重庆.md
   - 题解: 
       - 牛客竞赛: 
-          - 牛客练习赛 146: editorial/牛客练习赛146.md
+          - 牛客练习赛 146: editorial/nowcoder/牛客练习赛146.md
   - 图论:
       - 最短路: graph/shortest-way.md
   - 数学: 
