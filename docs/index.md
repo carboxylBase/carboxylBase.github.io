@@ -1,5 +1,7 @@
 来自西北工业大学的算法竞赛爱好者.
 
+![头像](https://userpic.codeforces.org/3934169/title/fc989c37aabb3063.jpg)
+
 主包的算法竞赛平台账号:
 
 [codeforces](https://codeforces.com/profile/carboxylBase)
