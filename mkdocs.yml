@@ -8,35 +8,42 @@ nav:
   - 游记:
       - 旅行的意义: travelogue/index.md
       - 2022: 
-          - 第 49 届 cpho 复赛: travelogue/2022/cpho39.md
+          - cpho 复赛 合肥: travelogue/2022/cpho39.md
       - 2024: 
-          - 2024 ICPC 南京: travelogue/2024icpc南京.md
-          - 2024 ICPC 杭州: travelogue/2024icpc杭州.md
+          - 2024 CMC 济南: travelogue/2024/2024cmc济南.md
+          - 2024 ICPC 南京: travelogue/2024/2024icpc南京.md
+          - 2024 ICPC 杭州: travelogue/2024/2024icpc杭州.md
       - 2025:
-          - 2025 ICPC 武汉: travelogue/2025icpc武汉.md
+          - 2025 ICPC 武汉: travelogue/2025/2025icpc武汉.md
           - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
-          - 2025 CCPC 重庆: travelogue/2025ccpc重庆.md
+          - 2025 CCPC 重庆: travelogue/2025/2025ccpc重庆.md
+          - 2025 百度之星 & CACC 北京: travelogue/2025/2025百度之星_CACC.md
   - 题解: 
       - 牛客竞赛: 
           - 牛客练习赛:
               - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
   - 图论:
-      - 最短路: graph/shortest-way.md
+      - 最短路: graph/最短路.md
   - 数学: 
       - 多项式:
           - 指数型生成函数: math/poly/指数型生成函数.md
       - 数值方法:
           - 拉格朗日插值: math/numerial/拉格朗日插值.md
   - 数据结构:
-      - 线段树: data-structure/segment-tree.md
+      - 可持久化数据结构: ds/可持久化数据结构.md
   - 字符串: 
       - Manacher: string/manacher.md
   - 几何: 
       - 凸包: geometry/convex-hull.md
+  - 动态规划:
+      - min-plus卷积: dp/min_plus卷积.md
+  - 模版库:
+      - cpp模版: library/index.md 
 
 
 theme:
   name: material
+  highlightjs: true
   palette:
     - scheme: default
       toggle:
@@ -53,14 +60,15 @@ theme:
     - navigation.tabs
     - navigation.expand
     - navigation.sections
-
-
+    - content.code.copy
 
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
 
 extra_javascript:
   - javascripts/mathjax.js
