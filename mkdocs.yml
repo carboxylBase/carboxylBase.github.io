@@ -1,17 +1,20 @@
 site_name: carboxylBase
 site_url: https://carboxylbase.github.io/
+copyright: 'Copyright &copy; carboxylBase'
 
 nav:
   - 主页: 
       - 社交账号: index.md
   - 游记:
       - 旅行的意义: travelogue/index.md
+      - 2022: 
+          - 第 49 届 cpho 复赛: travelogue/2022/cpho39.md
       - 2024: 
           - 2024 ICPC 南京: travelogue/2024icpc南京.md
           - 2024 ICPC 杭州: travelogue/2024icpc杭州.md
       - 2025:
           - 2025 ICPC 武汉: travelogue/2025icpc武汉.md
-          - 2025 ICPC 沈阳: travelogue/2025icpc沈阳.md
+          - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
           - 2025 CCPC 重庆: travelogue/2025ccpc重庆.md
   - 题解: 
       - 牛客竞赛: 
@@ -22,7 +25,8 @@ nav:
   - 数学: 
       - 多项式:
           - 指数型生成函数: math/poly/指数型生成函数.md
-      - 拉格朗日插值: math/lagrange-interpolation.md
+      - 数值方法:
+          - 拉格朗日插值: math/numerial/拉格朗日插值.md
   - 数据结构:
       - 线段树: data-structure/segment-tree.md
   - 字符串: 
@@ -48,6 +52,7 @@ theme:
     - navigation.top
     - navigation.tabs
     - navigation.expand
+    - navigation.sections
 
 
 
@@ -60,3 +65,5 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
