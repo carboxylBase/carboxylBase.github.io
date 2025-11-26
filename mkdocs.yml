@@ -20,6 +20,8 @@ nav:
   - 图论:
       - 最短路: graph/shortest-way.md
   - 数学: 
+      - 多项式:
+          - 指数型生成函数: math/poly/指数型生成函数.md
       - 拉格朗日插值: math/lagrange-interpolation.md
   - 数据结构:
       - 线段树: data-structure/segment-tree.md
