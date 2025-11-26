@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#egf" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1271,6 +1276,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1615,6 +1622,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1631,13 +1640,12 @@
 
 
 
-  <h1>指数型生成函数</h1>
-
+<h1 id="egf">初识指数型生成函数(EGF)</h1>
 <p>指数型生成函数是解决带标号计数问题的有力工具, 我们从一个例题入手, 介绍指数型生成函数.</p>
 <p>统计有多少种长度为 <span class="arithmatex">\(n\)</span> 的排列 <span class="arithmatex">\(P\)</span> 满足 <span class="arithmatex">\(P_{P_i} \ne i\)</span>, 答案对 <span class="arithmatex">\(998244353\)</span> 取模. <a href="https://atcoder.jp/contests/fps-24/tasks/fps_24_l">原题链接</a>.</p>
 <p>考虑从 <span class="arithmatex">\(i\)</span> 向 <span class="arithmatex">\(P_i\)</span> 连一条边, 最后会形成若干的环, 如果不存在大小为 <span class="arithmatex">\(1\)</span> 或者 <span class="arithmatex">\(2\)</span> 的环, 就是符合要求的排列. </p>
 <p>不妨先考虑每一个环有多少种方案, 记一个大小为 n 的环有 <span class="arithmatex">\(g_i\)</span> 种方案, 显然 <span class="arithmatex">\(g_i = \frac{i!}{i} = (i - 1)!\)</span> .</p>
-<p>下面, 我们考虑这些环是如何组合在一起的. 考虑 k 个环拼在一起对答案的贡献, 记第 i 个环大小为 a_i, 记 <span class="arithmatex">\(m = \sum_{i=1}^{k} a_i\)</span>, 那么这 k 个环应当对大小为 m 的排列产生贡献, 不考虑标号时, 贡献应当是 <span class="arithmatex">\(\prod_{i=1}^{k} g_{a_i}\)</span>, 考虑给每个环分配标号, 也就是一堆组合数乘在一起, 发现最后很多项都消掉了, 只剩下 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{1}{a_i!}\)</span>, 于是总的贡献就是 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{g_{a_i}}{a_i!}\)</span>.</p>
+<p>下面, 我们考虑这些环是如何组合在一起的. 考虑 k 个环拼在一起对答案的贡献, 记第 i 个环大小为 <span class="arithmatex">\(a_i\)</span>, 记 <span class="arithmatex">\(m = \sum_{i=1}^{k} a_i\)</span>, 那么这 k 个环应当对大小为 m 的排列产生贡献, 不考虑标号时, 贡献应当是 <span class="arithmatex">\(\prod_{i=1}^{k} g_{a_i}\)</span>, 考虑给每个环分配标号, 也就是一堆组合数乘在一起, 发现最后很多项都消掉了, 只剩下 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{1}{a_i!}\)</span>, 于是总的贡献就是 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{g_{a_i}}{a_i!}\)</span>.</p>
 <p>从多项式的角度考虑这个式子, 如果将其变形为 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{g_{a_i} x^i}{a_i!}\)</span>, 其中 x 是自变量, 那么最终 x 的幂次恰好就是 m.</p>
 <p>这启示我们定义 <span class="arithmatex">\(G(x) = \sum_{i=3}^{\infty} \frac{g_i x^i}{i!}\)</span> 表示单个环的贡献.</p>
 <p>含有 k 个环的序列可以表示为 <span class="arithmatex">\(\frac{{G(x)}^k}{k!}\)</span> , 那么答案可以用多项式表示为:</p>
@@ -1648,6 +1656,10 @@ F(x) &amp;= 1 + \sum_{i=1}^{\infty} \frac{G(x)^i}{i!} \\
 \end{aligned}
 \]</div>
 <p>加 1 是为了凑出 <span class="arithmatex">\(e^x\)</span> 的泰勒展开式. 于是我们可以用多项式exp的技巧解决此题.</p>
+<h1 id="egf_1">EGF在无标号计数问题中的应用</h1>
+<p>以洛谷P6295为例, 这篇<a href="https://www.cnblogs.com/apjifengc/p/16669947.html">题解</a>的解释已经相当详尽了, 主包不再赘述. 我们主要讨论题解的最后的一部分, <span class="arithmatex">\(F(x)\)</span> 怎么导出答案.</p>
+<p>记 <span class="arithmatex">\(F'(x) = \sum_{i=0}^{} \frac{f_i}{i!} x^i\)</span> . 其中 <span class="arithmatex">\(f_i\)</span> 表示 <span class="arithmatex">\(i\)</span> 个点形成的弱联通无标号 DAG 的数量. 那么 <span class="arithmatex">\(f_i / i!\)</span> 自然就表示有标号情形下的方案数, 定义 <span class="arithmatex">\(G(x) = \sum_{i=0}^{}g_i x^i\)</span> 表示有标号情况下, 强连通 DAG 的方案数, 那么 <span class="arithmatex">\(F'(x) = e^{G(x)}\)</span> ,<span class="arithmatex">\(G(x) = ln(F'(x))\)</span>. 最终答案就是 <span class="arithmatex">\(g_i * i!\)</span> .</p>
+<p>可见通过合适的转换, EGF 也能解决带标号计数问题.</p>
 
 
 
