@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#egf" class="md-skip">
+        <a href="#exp" class="md-skip">
           Skip to content
         </a>
       
@@ -1640,8 +1640,8 @@
 
 
 
-<h1 id="egf">初识指数型生成函数(EGF)</h1>
-<p>指数型生成函数是解决带标号计数问题的有力工具, 我们从一个例题入手, 介绍指数型生成函数.</p>
+<h1 id="exp">多项式 exp</h1>
+<p>我们从一个例题入手, 引入指数型生成函数, 并介绍多项式 exp 的技巧.</p>
 <p>统计有多少种长度为 <span class="arithmatex">\(n\)</span> 的排列 <span class="arithmatex">\(P\)</span> 满足 <span class="arithmatex">\(P_{P_i} \ne i\)</span>, 答案对 <span class="arithmatex">\(998244353\)</span> 取模. <a href="https://atcoder.jp/contests/fps-24/tasks/fps_24_l">原题链接</a>.</p>
 <p>考虑从 <span class="arithmatex">\(i\)</span> 向 <span class="arithmatex">\(P_i\)</span> 连一条边, 最后会形成若干的环, 如果不存在大小为 <span class="arithmatex">\(1\)</span> 或者 <span class="arithmatex">\(2\)</span> 的环, 就是符合要求的排列. </p>
 <p>不妨先考虑每一个环有多少种方案, 记一个大小为 n 的环有 <span class="arithmatex">\(g_i\)</span> 种方案, 显然 <span class="arithmatex">\(g_i = \frac{i!}{i} = (i - 1)!\)</span> .</p>
@@ -1655,11 +1655,10 @@ F(x) &amp;= 1 + \sum_{i=1}^{\infty} \frac{G(x)^i}{i!} \\
      &amp;= e^{G(x)}
 \end{aligned}
 \]</div>
-<p>加 1 是为了凑出 <span class="arithmatex">\(e^x\)</span> 的泰勒展开式. 于是我们可以用多项式exp的技巧解决此题.</p>
-<h1 id="egf_1">EGF在无标号计数问题中的应用</h1>
+<p>加 1 是为了凑出 <span class="arithmatex">\(e^x\)</span> 的泰勒展开式. 于是我们可以用多项式exp解决此题.</p>
+<h1 id="ln">多项式 ln</h1>
 <p>以洛谷P6295为例, 这篇<a href="https://www.cnblogs.com/apjifengc/p/16669947.html">题解</a>的解释已经相当详尽了, 主包不再赘述. 我们主要讨论题解的最后的一部分, <span class="arithmatex">\(F(x)\)</span> 怎么导出答案.</p>
-<p>记 <span class="arithmatex">\(F'(x) = \sum_{i=0}^{} \frac{f_i}{i!} x^i\)</span> . 其中 <span class="arithmatex">\(f_i\)</span> 表示 <span class="arithmatex">\(i\)</span> 个点形成的弱联通无标号 DAG 的数量. 那么 <span class="arithmatex">\(f_i / i!\)</span> 自然就表示有标号情形下的方案数, 定义 <span class="arithmatex">\(G(x) = \sum_{i=0}^{}g_i x^i\)</span> 表示有标号情况下, 强连通 DAG 的方案数, 那么 <span class="arithmatex">\(F'(x) = e^{G(x)}\)</span> ,<span class="arithmatex">\(G(x) = ln(F'(x))\)</span>. 最终答案就是 <span class="arithmatex">\(g_i * i!\)</span> .</p>
-<p>可见通过合适的转换, EGF 也能解决带标号计数问题.</p>
+<p>记 <span class="arithmatex">\(F'(x) = \sum_{i=0}^{} \frac{f_i}{i!} x^i\)</span> . 其中 <span class="arithmatex">\(f_i\)</span> 表示 <span class="arithmatex">\(i\)</span> 个点形成的有标号弱联通无标号 DAG 的数量. 那么 <span class="arithmatex">\(f_i / i!\)</span> 自然就表示无标号情形下的方案数, 定义 <span class="arithmatex">\(G(x) = \sum_{i=0}^{}g_i x^i\)</span> 表示无标号情况下, 强连通 DAG 的方案数, 那么 <span class="arithmatex">\(F'(x) = e^{G(x)}\)</span> ,<span class="arithmatex">\(G(x) = ln(F'(x))\)</span>. 最终答案就是 <span class="arithmatex">\(g_i * i!\)</span> .</p>
 
 
 
