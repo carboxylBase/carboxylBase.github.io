@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#a-b" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1932,6 +1937,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    min-plus卷积
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1948,6 +1971,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        当 a 和 b 都是凸序列时
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2068,6 +2119,25 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        当 a 和 b 都是凸序列时
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2085,7 +2155,14 @@
 
   <h1>min-plus卷积</h1>
 
-
+<p>给定两个序列 <span class="arithmatex">\(a = (a_0, a_1, \dots, a_{n-1})\)</span> 和 <span class="arithmatex">\(b = (b_0, b_1, \dots, b_{m-1})\)</span>，它们的 <strong>min-plus 卷积</strong> 定义为序列 <span class="arithmatex">\(c = (c_0, c_1, \dots, c_{n+m-2})\)</span>：</p>
+<div class="arithmatex">\[
+c_k = \min_{i+j=k} (a_i + b_j), \quad k = 0, 1, \dots, n+m-2
+\]</div>
+<p>即对每个下标 <span class="arithmatex">\(k\)</span>，取所有满足 <span class="arithmatex">\(i+j=k\)</span> 的组合 <span class="arithmatex">\(a_i + b_j\)</span> 中的最小值。</p>
+<h2 id="a-b">当 a 和 b 都是凸序列时</h2>
+<p>考虑各自的差分数组 <span class="arithmatex">\( \Delta a \)</span> 和 <span class="arithmatex">\( \Delta b \)</span>，它们都是单调递增的。为了使 <span class="arithmatex">\(c_i\)</span> 取得最小值，显然需要选择 <span class="arithmatex">\( \Delta a\)</span> 和 <span class="arithmatex">\( \Delta b\)</span> 中前 <span class="arithmatex">\(i\)</span> 小的元素。因此，我们可以顺便得出结论：序列 <span class="arithmatex">\(c\)</span> 也是凸序列。</p>
+<p>而且不难发现这个过程可以用双指针线性的完成。</p>
 
 
 

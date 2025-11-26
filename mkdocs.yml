@@ -23,7 +23,7 @@ nav:
           - 牛客练习赛:
               - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
   - 图论:
-      - 最短路: graph/最短路.md
+      - 最小环: graph/最小环.md
   - 数学: 
       - 多项式:
           - 指数型生成函数: math/poly/指数型生成函数.md
