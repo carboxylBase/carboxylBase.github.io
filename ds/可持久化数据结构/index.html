@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1665,6 +1670,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    可持久化数据结构
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1681,6 +1704,56 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可持久化线段树
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可持久化字典树
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        区间版本查询
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2068,6 +2141,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可持久化线段树
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可持久化字典树
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        区间版本查询
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2085,7 +2199,14 @@
 
   <h1>可持久化数据结构</h1>
 
-
+<h2 id="_1">可持久化线段树</h2>
+<p>可持久化线段树也叫主席树, 是一种支持历史版本查询和单点修改的线段树, 是建立在动态开点线段树的基础上的.</p>
+<p>考虑线段树单点修改的过程, 实际上就是修改了一条链, 一个节点有两个儿子, 对于被位于被修改的链上的儿子, 我们单独开一个新节点, 至于另一个儿子, 我们直接指向它原本的指针即可, 因为它的信息是不变的.</p>
+<p>于是, 我们就有 <span class="arithmatex">\(O(logn)\)</span> 的单点修改.</p>
+<h2 id="_2">可持久化字典树</h2>
+<p>可持久化字典树的思想类似于可持久化线段树, 考虑插入字符串的过程, 同样是只会修改一条链的信息, 另一条链的信息可以复制.</p>
+<h2 id="_3">区间版本查询</h2>
+<p>有时可能需要查询第 <span class="arithmatex">\(l\)</span> 到 <span class="arithmatex">\(r\)</span> 个操作产生的影响, 此时我们只需查询第 <span class="arithmatex">\(l - 1\)</span> 个版本和第 <span class="arithmatex">\(r\)</span> 个版本的差分即可.</p>
 
 
 
