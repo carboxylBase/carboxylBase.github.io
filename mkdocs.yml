@@ -36,7 +36,7 @@ nav:
   - 字符串: 
       - Manacher: string/manacher.md
   - 几何: 
-      - 凸包: geometry/convex-hull.md
+      - 闵可夫斯基和: geometry/闵可夫斯基和.md
   - 动态规划:
       - min-plus卷积: dp/min_plus卷积.md
   - 模版库:
