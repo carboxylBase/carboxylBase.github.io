@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://carboxylbase.github.io/geometry/convex-hull/">
+        <link rel="canonical" href="https://carboxylbase.github.io/geometry/%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C/">
       
       
         <link rel="prev" href="../../string/manacher/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>凸包 - carboxylBase</title>
+        <title>闵可夫斯基和 - carboxylBase</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              凸包
+              闵可夫斯基和
             
           </span>
         </div>
@@ -1899,6 +1904,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    闵可夫斯基和
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1906,7 +1929,7 @@
   <span class="md-ellipsis">
     
   
-    凸包
+    闵可夫斯基和
   
 
     
@@ -1915,6 +1938,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二维闵可夫斯基和的定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onmlognm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(O(nm\log(nm))\) 的做法
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2124,6 +2186,36 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二维闵可夫斯基和的定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onmlognm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(O(nm\log(nm))\) 的做法
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2139,9 +2231,21 @@
 
 
 
-  <h1>凸包</h1>
+  <h1>闵可夫斯基和</h1>
 
-
+<h2 id="_1">二维闵可夫斯基和的定义</h2>
+<p>算法竞赛中通常只讨论二维情形下两个凸包的闵可夫斯基和.</p>
+<p>给定两个平面图形 <span class="arithmatex">\(P, Q \subset \mathbb{R}^2\)</span>，它们的<strong>闵可夫斯基和</strong>定义为
+[
+P \oplus Q = {\, p + q \mid p \in P,\ q \in Q \,}.
+]
+即：将 <span class="arithmatex">\(P\)</span> 中的每个向量与 <span class="arithmatex">\(Q\)</span> 中的每个向量逐点相加所得到的所有向量的集合。</p>
+<p>二维闵可夫斯基和也可从几何角度定义。固定图形 <span class="arithmatex">\(Q\)</span>，让图形 <span class="arithmatex">\(P\)</span> 在平面上平移，并要求 <span class="arithmatex">\(P\)</span> 与 <span class="arithmatex">\(Q\)</span> 至少有一个交点。此时，取 <span class="arithmatex">\(P\)</span> 上某一指定点，记录该点在所有允许平移位置中可能到达的全部位置，其轨迹集合正是 <span class="arithmatex">\(P\)</span> 与 <span class="arithmatex">\(Q\)</span> 的闵可夫斯基和。</p>
+<p>不难发现这个定义和上面的定义是等价的.</p>
+<h2 id="onmlognm"><span class="arithmatex">\(O(nm\log(nm))\)</span> 的做法</h2>
+<p>主包在 2025ICPC沈阳G 中独立发现了这个做法, 感觉还挺直观的, 但是会的人似乎并不多.</p>
+<p>从第二定义出发，考察 <span class="arithmatex">\(P\)</span> 上某指定点 <span class="arithmatex">\(x\)</span> 的所有可能位置。可以发现，随着 <span class="arithmatex">\(P\)</span> 在 <span class="arithmatex">\(Q\)</span> 上平移，<span class="arithmatex">\(x\)</span> 的运动轨迹本身也构成一个凸包。因此只需枚举该凸包的所有可能顶点。</p>
+<p>进一步观察可知，只有当 <span class="arithmatex">\(P\)</span> 的某个顶点与 <span class="arithmatex">\(Q\)</span> 的某个顶点重合时，<span class="arithmatex">\(x\)</span> 的位置才可能成为其轨迹的一个顶点。于是，我们将 <span class="arithmatex">\(P\)</span> 与 <span class="arithmatex">\(Q\)</span> 的顶点逐一配对，枚举得到至多 <span class="arithmatex">\(nm\)</span> 个候选点，对这些点求一次凸包，即可得到 <span class="arithmatex">\(x\)</span> 的完整轨迹，也即 <span class="arithmatex">\(P \oplus Q\)</span>。</p>
 
 
 
