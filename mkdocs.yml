@@ -5,6 +5,7 @@ copyright: 'Copyright &copy; carboxylBase'
 nav:
   - 主页: 
       - 社交账号: index.md
+      - 最近更新: home/recent-updates.md
   - 游记:
       - 旅行的意义: travelogue/index.md
       - 2022: 
@@ -42,6 +43,10 @@ nav:
   - 模版库:
       - cpp模版: library/index.md 
 
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
 
 theme:
   name: material
