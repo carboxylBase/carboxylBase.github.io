@@ -30,6 +30,7 @@ nav:
               - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
   - 图论:
       - 最小环: graph/最小环.md
+      - 树与线段树: graph/树与线段树.md
   - 数学: 
       - 组合数学:
           - 各种恒等式: math/combination/identity.md
