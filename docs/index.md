@@ -12,6 +12,6 @@
 
 [牛客竞赛](https://ac.nowcoder.com/acm/contest/profile/942388724)
 
-[代码源]()
+[代码源](https://bs.daimayuan.top/user/2389)
 
 [力扣](https://leetcode.cn/u/zui-ji-jian-o/)
