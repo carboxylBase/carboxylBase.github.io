@@ -31,6 +31,8 @@ nav:
   - 图论:
       - 最小环: graph/最小环.md
   - 数学: 
+      - 组合数学:
+          - 各种恒等式: math/combination/identity.md
       - 多项式:
           - 指数型生成函数: math/poly/指数型生成函数.md
       - 数值方法:
