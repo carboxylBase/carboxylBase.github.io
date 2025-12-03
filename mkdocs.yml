@@ -22,8 +22,12 @@ nav:
           - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
   - 题解:
       - CodeForces:
+          - Div2:
+              - Round 1067: editorial/codeforces/div2/round1067.md
           - Div3:
               - Round 1042: editorial/codeforces/div3/round1042.md
+          - Edu:
+              - Round 185: editorial/codeforces/edu/round185.md
       - 牛客竞赛:
           - 牛客练习赛:
               - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
