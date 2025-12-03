@@ -1,0 +1,89 @@
+site_name: carboxylBase
+site_url: https://carboxylbase.github.io/
+copyright: 'Copyright &copy; carboxylBase'
+
+nav:
+  - 主页: 
+      - 社交账号: index.md
+      - 最近更新: home/recent-updates.md
+  - 游记:
+      - 旅行的意义: travelogue/index.md
+      - 2022: 
+          - cpho 复赛 合肥: travelogue/2022/cpho39.md
+      - 2024: 
+          - 2024 CMC 济南: travelogue/2024/2024cmc济南.md
+          - 2024 ICPC 南京: travelogue/2024/2024icpc南京.md
+          - 2024 ICPC 杭州: travelogue/2024/2024icpc杭州.md
+      - 2025:
+          - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
+          - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
+          - 2025 ICPC 武汉: travelogue/2025/2025icpc武汉.md
+          - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
+          - 2025 CCPC 重庆: travelogue/2025/2025ccpc重庆.md
+          - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
+  - 题解: 
+      - CodeForces:
+          - Div3: 
+              - Round 1042: editorial/codeforces/div3/round1042.md
+      - 牛客竞赛: 
+          - 牛客练习赛:
+              - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
+  - 图论:
+      - 最小环: graph/最小环.md
+      - dfn 序的妙用: graph/dfn.md
+  - 数学: 
+      - 组合数学:
+          - 各种恒等式: math/combination/identity.md
+      - 多项式:
+          - 指数型生成函数: math/poly/指数型生成函数.md
+      - 数值方法:
+          - 拉格朗日插值: math/numerial/拉格朗日插值.md
+  - 数据结构:
+      - 可持久化数据结构: ds/可持久化数据结构.md
+  - 字符串: 
+      - Manacher: string/manacher.md
+  - 几何: 
+      - 闵可夫斯基和: geometry/闵可夫斯基和.md
+  - 动态规划:
+      - min-plus卷积: dp/min_plus卷积.md
+  - 模版库:
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
+theme:
+  name: material
+  highlightjs: true
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    code: Roboto Mono
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.expand
+    - navigation.sections
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:

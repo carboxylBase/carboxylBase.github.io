@@ -1,0 +1,153 @@
+# TreeChainSeg
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const ll N = 2000000;
+
+#define LS (rt << 1)
+#define RS (rt << 1 | 1)
+
+class SegTree{
+public:
+    struct Node{
+        Node() {
+
+        }
+    }nodes[N*4];
+
+    Node merge(Node L,Node R){
+        Node M;
+        return M;
+    }
+    void build(int rt,int l,int r){
+        if (l == r){
+            return;
+        }
+        int mid = l + r >> 1;
+        build(LS,l,mid),build(RS,mid+1,r);
+        nodes[rt] = merge(nodes[LS],nodes[RS]);
+    }
+    void pd(int rt){
+
+    }
+    void update(int rt,int l,int r,int ql,int qr,int val){
+        if (ql > qr || l > qr || ql > r) return;
+        if (ql <= l && r <= qr){
+            return;
+        }
+        int mid = l+r>>1;
+        pd(rt);
+        if (ql <= mid){
+            update(LS,l,mid,ql,qr,val);
+        }
+        if (qr >= mid + 1){
+            update(RS,mid+1,r,ql,qr,val);
+        }
+        nodes[rt] = merge(nodes[LS],nodes[RS]);
+        return;
+    }
+    void modify(int rt,int l,int r,int q,int val){
+        if (l > q || r < q) return;
+        if (l == r) {
+            return;
+        }
+        int mid = l+r>>1;
+        pd(rt);
+        if (q <= mid){
+            modify(LS,l,mid,q,val);
+        }
+        if (q >= mid + 1){
+            modify(RS,mid+1,r,q,val);
+        }
+        nodes[rt] = merge(nodes[LS],nodes[RS]);
+        return;
+    }
+    Node query(int rt,int l,int r,int ql,int qr){
+        if (ql > qr) {
+            return Node();
+        }
+        if (ql <= l && r <= qr){
+            return nodes[rt];
+        }
+        int mid = l+r>>1;
+        pd(rt);
+        if (ql > mid){
+            return query(RS,mid+1,r,ql,qr);
+        }else if (qr < mid + 1){
+            return query(LS,l,mid,ql,qr);
+        }else{
+            return merge(query(LS,l,mid,ql,qr),query(RS,mid+1,r,ql,qr));
+        }
+    }
+};
+
+struct TreeChainSeg {
+    vector<vector<int>> g;
+    SegTree seg;
+    vector<int> fa, top, siz, son, dep, dfn, id;
+    int cnt, n, cnt2;
+
+    void dfs1(int u) {
+        siz[u] = 1;
+        for (auto v : g[u]) {
+            if (fa[u] == v) continue;
+            dep[v] = dep[u] + 1;
+            fa[v] = u;
+            dfs1(v);
+            siz[u] += siz[v];
+            if (!son[u] || siz[son[u]] < siz[v]) {
+                son[u] = v;
+            }
+        }
+        return;
+    }
+
+    void dfs2(int u, int tp) {
+        id[cnt] = u;
+        dfn[u] = ++cnt;
+        top[u] = tp;
+        if (son[u]) {
+            dfs2(son[u], tp);
+        }
+        for (auto v : g[u]) {
+            if (v == fa[u] || v == son[u]) continue;
+            dfs2(v, v);
+        }
+        return;
+    }
+
+    void init(vector<vector<int>>& G) {
+        g = G;
+        n = g.size();
+        cnt = 0, cnt2 = n + 1;
+        fa.clear(); fa.resize(n + 1, 0);
+        top.clear(); top.resize(n + 1, 0);
+        siz.clear(); siz.resize(n + 1, 0);
+        son.clear(); son.resize(n + 1, 0);
+        dep.clear(); dep.resize(n + 1, 0);
+        dfn.clear(); dfn.resize(n + 1, 0);
+        id.clear(); id.resize(n + 1, 0);
+
+        dfs1(1), dfs2(1, 1);
+        seg.build(1, 1, n);
+        return;
+    }
+
+    int lca(int u, int v) {
+        while (top[u] != top[v]) {
+            if (dep[top[u]] > dep[top[v]]) {
+                u = fa[top[u]];
+            } else {
+                v = fa[top[v]];
+            }
+        }
+        if (dep[u] > dep[v]) {
+            return v;
+        }
+        return u;
+    }
+ };
+
+```

@@ -1,0 +1,16 @@
+# Random
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+struct RandomNumberGenerator{
+    RandomNumberGenerator() : gen(std::random_device{}()){}
+    ll generate(ll l,ll r){
+        uniform_int_distribution<ll> dis(l, r);
+        return dis(gen);
+    }
+    mt19937 gen;
+} gen;
+```
