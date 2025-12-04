@@ -66,6 +66,7 @@ nav:
           - 三角形: library/Geometry/三角形.md
           - 凸包: library/Geometry/凸包.md
           - 圆的并: library/Geometry/圆的并.md
+          - 平面最近点对: library/Geometry/平面最近点对.md
       - Graph:
           - Lca: library/Graph/Lca.md
           - Prufer: library/Graph/Prufer.md
