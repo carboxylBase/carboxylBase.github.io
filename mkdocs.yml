@@ -34,6 +34,7 @@ nav:
   - 图论:
       - 最小环: graph/最小环.md
       - dfn 序的妙用: graph/dfn.md
+      - 树上背包: graph/树上背包.md
   - 数学:
       - 组合数学:
           - 各种恒等式: math/combination/identity.md
