@@ -35,6 +35,7 @@ nav:
       - 最小环: graph/最小环.md
       - dfn 序的妙用: graph/dfn.md
       - 树上背包: graph/树上背包.md
+      - 神秘构造: graph/神秘构造.md
   - 数学:
       - 组合数学:
           - 各种恒等式: math/combination/identity.md
@@ -49,8 +50,9 @@ nav:
   - 几何:
       - 闵可夫斯基和: geometry/闵可夫斯基和.md
   - 动态规划:
-      - 背包问题: 背包问题.md
+      - 背包问题: dp/背包问题.md
       - min-plus卷积: dp/min_plus卷积.md
+      - 子集枚举: dp/子集枚举.md
   - 模版库:
       - DataStructure:
           - ST表: library/DataStructure/ST表.md
