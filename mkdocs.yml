@@ -3,7 +3,7 @@ site_url: https://carboxylbase.github.io/
 copyright: Copyright &copy; carboxylBase
 nav:
   - 主页:
-      - 社交账号: index.md
+      - 简介: index.md
       - 最近更新: home/recent-updates.md
   - 游记:
       - 旅行的意义: travelogue/index.md
