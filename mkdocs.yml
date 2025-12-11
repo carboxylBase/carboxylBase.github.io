@@ -46,6 +46,7 @@ nav:
   - 数据结构:
       - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
       - 可持久化并查集: ds/可持久化并查集.md
+      - 线段树分治: ds/线段树分治.md
   - 字符串:
       - Manacher: string/manacher.md
   - 几何:
@@ -152,6 +153,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences
+  - pymdownx.tilde
 
 extra_javascript:
   - javascripts/mathjax.js
