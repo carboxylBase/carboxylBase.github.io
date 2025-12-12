@@ -20,10 +20,11 @@ nav:
           - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
           - 2025 CCPC 重庆: travelogue/2025/2025ccpc重庆.md
           - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
-  - 题解:
+  - 比赛总结:
       - CodeForces:
           - Div2:
               - Round 1067: editorial/codeforces/div2/round1067.md
+              - Round 1070: editorial/codeforces/div2/round1070.md
           - Div3:
               - Round 1042: editorial/codeforces/div3/round1042.md
           - Edu:
