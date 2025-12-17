@@ -4,7 +4,7 @@ copyright: Copyright &copy; carboxylBase
 nav:
   - 主页:
       - 简介: index.md
-      - 最近更新: home/recent-updates.md
+      - 最近更新: recent.md
   - 游记:
       - 旅行的意义: travelogue/index.md
       - 2022:
