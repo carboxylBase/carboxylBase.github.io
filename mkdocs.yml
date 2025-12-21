@@ -41,6 +41,8 @@ nav:
       - 牛客竞赛:
           - 牛客练习赛:
               - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
+          - 牛客周赛:
+              - Round 123: editorial/nowcoder/weekly/round123.md
   - 图论:
       - 最小环: graph/最小环.md
       - dfn 序的妙用: graph/dfn.md
