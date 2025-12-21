@@ -31,6 +31,12 @@ nav:
               - Round 1042: editorial/codeforces/div3/round1042.md
           - Edu:
               - Round 185: editorial/codeforces/edu/round185.md
+      - Atcoder:
+          - ABC:
+              - ABC437: editorial/atcoder/abc/abc437.md
+      - 力扣:
+          - 周赛:
+              - round437:  editorial/leetcode/weekly/weekly481.md
       - 牛客竞赛:
           - 牛客练习赛:
               - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
