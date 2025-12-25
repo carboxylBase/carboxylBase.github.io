@@ -49,12 +49,11 @@ nav:
       - 树上背包: graph/树上背包.md
       - 神秘构造: graph/神秘构造.md
   - 数学:
-      - 组合数学:
-          - 各种恒等式: math/combination/identity.md
-      - 多项式:
-          - 指数型生成函数: math/poly/指数型生成函数.md
-      - 数值方法:
-          - 拉格朗日插值: math/numerial/拉格朗日插值.md
+      - 各种恒等式: math/各种恒等式.md
+      - 指数型生成函数: math/指数型生成函数.md
+      - 拉格朗日插值: math/numerial/拉格朗日插值.md
+      - 分母不存在逆元的计数: math/分母不存在逆元的计数.md
+      - 单位根反演: math/单位根反演.md
   - 数据结构:
       - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
       - 并查集: ds/并查集.md
