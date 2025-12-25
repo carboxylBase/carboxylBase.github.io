@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://carboxylbase.github.io/ds/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/">
       
       
-        <link rel="prev" href="../%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86/">
+        <link rel="prev" href="../%E5%B9%B6%E6%9F%A5%E9%9B%86/">
       
       
         <link rel="next" href="../../string/manacher/">
@@ -2797,14 +2797,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="md-nav__link">
+      <a href="../%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    可持久化并查集
+    并查集
   
 
     
@@ -2896,6 +2896,17 @@
     <span class="md-ellipsis">
       
         P4585 [FJOI2015] 火星商店问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于可持久化并查集
       
     </span>
   </a>
@@ -4180,6 +4191,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../library/Graph/%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    矩阵树定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../library/Graph/%E8%99%9A%E6%A0%91/" class="md-nav__link">
         
   
@@ -4278,6 +4317,34 @@
     
   
     BGSG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/Math/Complex3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex3
   
 
     
@@ -5310,6 +5377,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于可持久化并查集
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5329,6 +5407,7 @@
 
   <h1>线段树分治</h1>
 
+<p>某些操作只在某些时间段有效,  这种问题通常考虑线段树分治.</p>
 <p>线段树分治有两种, 其一是通过对所有操作进行 logn 次加入和撤销, 维持复杂度, 其二是在时间轴上建线段树, 然后用线段树的方式查询询问, 合并答案.</p>
 <p><del>多数人认为第二种技巧不是线段树分治</del>, 但我觉得这个技巧也没啥能叫的名字了.</p>
 <p>下面用两个例题具体介绍一下这两种技巧:</p>
@@ -5342,7 +5421,9 @@
 <p>特殊商品可以单独丢到一个 trie 上考虑, 这部分是好做的.</p>
 <p>对其余操作线段树分治考虑, 可以把商店编号或者时间作为轴, 做法是类似的.</p>
 <p>显然时间做轴比较好写. 把所有操作按时间插入到对应的链中, 每一个线段树节点上建一个可持久化 trie, 这样一来每一个操作会贡献 logn 次. 查询的部分和线段树差不多, 复杂度分析也和普通线段树一样的.</p>
-<p>完结撒花.</p>
+<h2 id="_1">关于可持久化并查集</h2>
+<p>个人的习惯是使用 <code>vector&lt;int&gt;</code> 存 fa 数组, 然后撤销操作直接弹出栈尾, 感觉很方便.</p>
+<p>关于 sz 数组的维护, 可以考虑直接记录每次合并的 u, v, 这应该是标准做法?</p>
 
 
 
@@ -5363,7 +5444,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 17, 2025 14:47:55 UTC">December 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 25, 2025 10:35:54 UTC">December 25, 2025</span>
   </span>
 
     

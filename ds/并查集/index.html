@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://carboxylbase.github.io/ds/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86/">
+        <link rel="canonical" href="https://carboxylbase.github.io/ds/%E5%B9%B6%E6%9F%A5%E9%9B%86/">
       
       
         <link rel="prev" href="../%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91%26%E5%AD%97%E5%85%B8%E6%A0%91/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>可持久化并查集 - carboxylBase</title>
+        <title>并查集 - carboxylBase</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              可持久化并查集
+              并查集
             
           </span>
         </div>
@@ -2799,6 +2804,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    并查集
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2806,7 +2829,7 @@
   <span class="md-ellipsis">
     
   
-    可持久化并查集
+    并查集
   
 
     
@@ -2815,6 +2838,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可持久化并查集
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        维护奇环
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4118,6 +4180,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../library/Graph/%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    矩阵树定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../library/Graph/%E8%99%9A%E6%A0%91/" class="md-nav__link">
         
   
@@ -4216,6 +4306,34 @@
     
   
     BGSG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../library/Math/Complex3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex3
   
 
     
@@ -5220,6 +5338,36 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可持久化并查集
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        维护奇环
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5235,14 +5383,20 @@
 
 
 
-  <h1>可持久化并查集</h1>
+  <h1>并查集</h1>
 
+<h2 id="_1">可持久化并查集</h2>
 <p>首先, 可持久化并查集和可撤销并查集是两个东西.</p>
 <p>其次, 可撤销并查集并没有被发明出来 qwq.</p>
 <p>可持久化并查集本质上是对 fa 数组进行可持久化.</p>
 <p>常规的并查集通过路径压缩实现均摊 <span class="arithmatex">\(O(n \alpha (n))\)</span> 的复杂度, 不过路径压缩会损失很多信息, 导致我们无法将 fa 数组恢复到原本的状态. 这启发我们寻找一种新的, 可撤销操作的合并方法.</p>
 <p>比较好的想法是按秩合并 fa 数组, 这样我们可以记录合并操作, 然后自顶向下一步一步的撤销合并操作, 并且由于我们是按秩合并的, 查询是 fa 数组的跳跃次数也是 log 级别.</p>
 <p>常见的秩是树高或者子树大小, 子树大小在撤销时比较方便, 故而推荐这种做法. 还有随机合并的 <sub>歪门邪道</sub>, 经常被卡, 不推荐! </p>
+<h2 id="_2">维护奇环</h2>
+<p>并查集可以方便的维护一个图有没有奇环.</p>
+<p>众所周知存在奇环等价于不是二分图, 如果一个图是二分图, 我们可以将点染成黑白色, 并且保持相邻点颜色不一样.</p>
+<p>我们将和 u 颜色相同的点连在一起, 不想同的和 u + n 连在一起, 每次加入新边, 直接检查有没有把 u 和 u + n 连在一起就可以了.</p>
+<p>这个技巧往往结合可持久化并查集使用.</p>
 
 
 
