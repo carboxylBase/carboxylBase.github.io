@@ -3,6 +3,7 @@
 Files:
 
 - [BGSG](BGSG.md)
+- [Complex3](Complex3.md)
 - [Crt](Crt.md)
 - [Int128](Int128.md)
 - [Lucas](Lucas.md)

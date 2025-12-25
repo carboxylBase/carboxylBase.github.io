@@ -15,117 +15,30 @@ O(1) LCA
 注意边权不要爆 ll !
 */
 
-class Graph{
-public:
-    int n;// 点的总数
-    struct Edge{
-        int next,to;
-        ll w;
-    }edge[N];
-    int head[N],cnt;
-    void add(int u,int v,ll w){
-        edge[++cnt].next = head[u];
-        head[u] = cnt;
-        edge[cnt].to = v;
-        edge[cnt].w = w;
-    }
-	void init(int N){
-		n = N;
-		for (int i = 1;i<n+1;i++){
-			head[i] = 0;
-		}
-		cnt = 0;
-		return;
-	}
-};
-
-class Lca {
-public:
-    Graph* g;
+struct Lca {
+    vector<vector<int>> *g;
     vector<int> depth, first, euler;
     vector<ll> dist;
     vector<vector<int>> st;
-    int lg[2 * N];
-    
-    void init(Graph* graph, int root) {
-        g = graph;
-        euler.clear();
-        depth.clear();
-        dist.clear();
-        dist.resize(g->n+1);
-        first.assign(g->n + 1, -1);
-        dfs(root, 0, 0, 0);
-        build_st();
-    }
+    vector<int> lg;
 
-    void dfs(int u, int fa, int d, ll sum) {
-        first[u] = euler.size();
-        euler.push_back(u);
-        depth.push_back(d);
-        dist[u] = sum;
-        for (int i = g->head[u]; i; i = g->edge[i].next) {
-            int v = g->edge[i].to;
-            if (v == fa) continue;
-            dfs(v, u, d + 1, sum + g->edge[i].w);
-            euler.push_back(u);
-            depth.push_back(d);
-        }
-    }
-
-    void build_st() {
-        int m = euler.size();
-        int k = __lg(m) + 1;
-        st.assign(k, vector<int>(m));
-        for (int i = 0; i < m; ++i) st[0][i] = i;
-        for (int i = 2; i < m + 5; ++i) lg[i] = lg[i >> 1] + 1;
-        for (int j = 1; (1 << j) <= m; ++j)
-            for (int i = 0; i + (1 << j) <= m; ++i) {
-                int l = st[j - 1][i], r = st[j - 1][i + (1 << (j - 1))];
-                st[j][i] = (depth[l] < depth[r] ? l : r);
-            }
-    }
-
-    int lca(int u, int v) {
-        int l = first[u], r = first[v];
-        if (l > r) swap(l, r);
-        int j = lg[r - l + 1];
-        int a = st[j][l], b = st[j][r - (1 << j) + 1];
-        return euler[depth[a] < depth[b] ? a : b];
-    }
-
-    ll query(int u,int v) {
-        int LCA = lca(u,v);
-        return dist[u] + dist[v] - 2 * dist[LCA];
-    }
-};
-
-class Lca {
-public:
-    vector<vector<int>>* g;
-    vector<int> depth, first, euler;
-    vector<ll> dist;
-    vector<vector<int>> st;
-    int lg[2 * N];
-    
     void init(vector<vector<int>>* graph, int root) {
         g = graph;
         euler.clear();
         depth.clear();
-        dist.clear();
-        dist.resize(g->size());
+        dist.assign(g->size(), 0);
         first.assign(g->size(), -1);
-        dfs(root, 0, 0, 0);
+        dfs(root, -1, 0, 0);
         build_st();
     }
 
-    void dfs(int u, int fa, int d, ll sum) {
+    void dfs(int u, int p, int d, ll s) {
         first[u] = euler.size();
         euler.push_back(u);
         depth.push_back(d);
-        dist[u] = sum;
-        for (auto v : (*g)[u]) {
-            if (v == fa) continue;
-            dfs(v, u, d + 1, sum + 1); // 默认边权是 1
+        dist[u] = s;
+        for (int v : (*g)[u]) if (v != p) {
+            dfs(v, u, d + 1, s + 1);
             euler.push_back(u);
             depth.push_back(d);
         }
@@ -133,14 +46,15 @@ public:
 
     void build_st() {
         int m = euler.size();
-        int k = __lg(m) + 1;
-        st.assign(k, vector<int>(m));
+        lg.assign(m + 1, 0);
+        for (int i = 2; i <= m; ++i) lg[i] = lg[i >> 1] + 1;
+        int K = lg[m] + 1;
+        st.assign(K, vector<int>(m));
         for (int i = 0; i < m; ++i) st[0][i] = i;
-        for (int i = 2; i < m + 5; ++i) lg[i] = lg[i >> 1] + 1;
         for (int j = 1; (1 << j) <= m; ++j)
             for (int i = 0; i + (1 << j) <= m; ++i) {
-                int l = st[j - 1][i], r = st[j - 1][i + (1 << (j - 1))];
-                st[j][i] = (depth[l] < depth[r] ? l : r);
+                int a = st[j - 1][i], b = st[j - 1][i + (1 << (j - 1))];
+                st[j][i] = depth[a] < depth[b] ? a : b;
             }
     }
 
@@ -149,14 +63,14 @@ public:
         if (l > r) swap(l, r);
         int j = lg[r - l + 1];
         int a = st[j][l], b = st[j][r - (1 << j) + 1];
-        return euler[depth[a] < depth[b] ? a : b];
+        return euler[ depth[a] < depth[b] ? a : b ];
     }
 
-    int query(int u,int v) {
-        int LCA = lca(u,v);
-        return dist[u] + dist[v] - 2 * dist[LCA];
+    int query(int u, int v) {
+        int L = lca(u, v);
+        return dist[u] + dist[v] - 2 * dist[L];
     }
-} solver;
+};
 
 // dep 跟 dist 不要搞混了谢谢喵
 struct Lca {

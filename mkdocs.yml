@@ -37,7 +37,7 @@ nav:
               - ABC437: editorial/atcoder/abc/abc437.md
       - 力扣:
           - 周赛:
-              - round437:  editorial/leetcode/weekly/weekly481.md
+              - round437: editorial/leetcode/weekly/weekly481.md
       - 牛客竞赛:
           - 牛客练习赛:
               - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
@@ -96,9 +96,11 @@ nav:
           - 树链剖分: library/Graph/树链剖分.md
           - 流: library/Graph/流.md
           - 点分治: library/Graph/点分治.md
+          - 矩阵树定理: library/Graph/矩阵树定理.md
           - 虚树: library/Graph/虚树.md
       - Math:
           - BGSG: library/Math/BGSG.md
+          - Complex3: library/Math/Complex3.md
           - Crt: library/Math/Crt.md
           - Int128: library/Math/Int128.md
           - Lucas: library/Math/Lucas.md
