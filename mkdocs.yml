@@ -2,174 +2,170 @@ site_name: carboxylBase
 site_url: https://carboxylbase.github.io/
 copyright: Copyright &copy; carboxylBase
 nav:
-  - 主页:
-      - 简介: index.md
-      - 最近更新: recent.md
-  - 游记:
-      - 旅行的意义: travelogue/index.md
-      - 2022:
-          - cpho 复赛 合肥: travelogue/2022/cpho39.md
-      - 2024:
-          - 2024 CMC 济南: travelogue/2024/2024cmc济南.md
-          - 2024 ICPC 南京: travelogue/2024/2024icpc南京.md
-          - 2024 ICPC 杭州: travelogue/2024/2024icpc杭州.md
-      - 2025:
-          - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
-          - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
-          - 2025 ICPC 武汉: travelogue/2025/2025icpc武汉.md
-          - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
-          - 2025 CCPC 重庆: travelogue/2025/2025ccpc重庆.md
-          - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
-  - 比赛总结:
-      - CodeForces:
-          - Div2:
-              - Round 1067: editorial/codeforces/div2/round1067.md
-              - Round 1070: editorial/codeforces/div2/round1070.md
-              - Round 1064: editorial/codeforces/div2/round1064.md
-              - Round 1061: editorial/codeforces/div2/round1061.md
-              - Round 1052: editorial/codeforces/div2/round1052.md
-          - Div3:
-              - Round 1042: editorial/codeforces/div3/round1042.md
-          - Edu:
-              - Round 185: editorial/codeforces/edu/round185.md
-      - Atcoder:
-          - ABC:
-              - ABC437: editorial/atcoder/abc/abc437.md
-      - 力扣:
-          - 周赛:
-              - round437: editorial/leetcode/weekly/weekly481.md
-      - 牛客竞赛:
-          - 牛客练习赛:
-              - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
-          - 牛客周赛:
-              - Round 123: editorial/nowcoder/weekly/round123.md
-  - 图论:
-      - 最小环: graph/最小环.md
-      - dfn 序的妙用: graph/dfn.md
-      - 树上背包: graph/树上背包.md
-      - 神秘构造: graph/神秘构造.md
-  - 数学:
-      - 各种恒等式: math/各种恒等式.md
-      - 指数型生成函数: math/指数型生成函数.md
-      - 拉格朗日插值: math/numerial/拉格朗日插值.md
-      - 分母不存在逆元的计数: math/分母不存在逆元的计数.md
-      - 单位根反演: math/单位根反演.md
-  - 数据结构:
-      - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
-      - 并查集: ds/并查集.md
-      - 线段树分治: ds/线段树分治.md
-  - 字符串:
-      - Manacher: string/manacher.md
-  - 几何:
-      - 闵可夫斯基和: geometry/闵可夫斯基和.md
-  - 动态规划:
-      - 背包问题: dp/背包问题.md
-      - min-plus卷积: dp/min_plus卷积.md
-      - 子集枚举: dp/子集枚举.md
-  - 模版库:
-      - DataStructure:
-          - ST表: library/DataStructure/ST表.md
-          - 伸展树: library/DataStructure/伸展树.md
-          - 左偏树: library/DataStructure/左偏树.md
-          - 并查集: library/DataStructure/并查集.md
-          - 李超树: library/DataStructure/李超树.md
-          - 树上启发式合并: library/DataStructure/树上启发式合并.md
-          - 树状数组: library/DataStructure/树状数组.md
-          - 珂朵莉树: library/DataStructure/珂朵莉树.md
-          - 笛卡尔树: library/DataStructure/笛卡尔树.md
-          - 线段树: library/DataStructure/线段树.md
-          - 高精度: library/DataStructure/高精度.md
-      - Geometry:
-          - 三角形: library/Geometry/三角形.md
-          - 凸包: library/Geometry/凸包.md
-          - 圆的并: library/Geometry/圆的并.md
-          - 平面最近点对: library/Geometry/平面最近点对.md
-      - Graph:
-          - Lca: library/Graph/Lca.md
-          - Prufer: library/Graph/Prufer.md
-          - Tarjan: library/Graph/Tarjan.md
-          - 图: library/Graph/图.md
-          - 斯坦纳树: library/Graph/斯坦纳树.md
-          - 最短路: library/Graph/最短路.md
-          - 树哈希: library/Graph/树哈希.md
-          - 树链剖分: library/Graph/树链剖分.md
-          - 流: library/Graph/流.md
-          - 点分治: library/Graph/点分治.md
-          - 矩阵树定理: library/Graph/矩阵树定理.md
-          - 虚树: library/Graph/虚树.md
-      - Math:
-          - BGSG: library/Math/BGSG.md
-          - Complex3: library/Math/Complex3.md
-          - Crt: library/Math/Crt.md
-          - Int128: library/Math/Int128.md
-          - Lucas: library/Math/Lucas.md
-          - Simpson积分: library/Math/Simpson积分.md
-          - Wheel筛: library/Math/Wheel筛.md
-          - 卡特兰数: library/Math/卡特兰数.md
-          - 哈希: library/Math/哈希.md
-          - 基元勾股数: library/Math/基元勾股数.md
-          - 多项式(旧): library/Math/多项式(旧).md
-          - 多项式: library/Math/多项式.md
-          - 拉格朗日插值: library/Math/拉格朗日插值.md
-          - 拓展gcd: library/Math/拓展gcd.md
-          - 数论分块: library/Math/数论分块.md
-          - 沃尔什卷积: library/Math/沃尔什卷积.md
-          - 矩阵: library/Math/矩阵.md
-          - 类欧几里得算法: library/Math/类欧几里得算法.md
-          - 线性基: library/Math/线性基.md
-          - 组合数: library/Math/组合数.md
-          - 自动取模: library/Math/自动取模.md
-          - 质数检验: library/Math/质数检验.md
-          - 质数筛: library/Math/质数筛.md
-          - 逆序数: library/Math/逆序数.md
-          - 闵可夫斯基和: library/Math/闵可夫斯基和.md
-          - 随机数: library/Math/随机数.md
-      - String:
-          - AC自动机: library/String/AC自动机.md
-          - Kmp: library/String/Kmp.md
-          - Manacher: library/String/Manacher.md
-          - Z函数: library/String/Z函数.md
-          - 后缀数组(SA): library/String/后缀数组(SA).md
-          - 后缀自动机(SAM): library/String/后缀自动机(SAM).md
-          - 回文自动机: library/String/回文自动机.md
-          - 字典树: library/String/字典树.md
+- 主页:
+  - 最近更新: recent.md
+  - 简介: index.md
+- 几何:
+  - 闵可夫斯基和: geometry/闵可夫斯基和.md
+- 动态规划:
+  - min-plus卷积: dp/min_plus卷积.md
+  - 子集枚举: dp/子集枚举.md
+  - 背包问题: dp/背包问题.md
+- 图论:
+  - dfn 序的妙用: graph/dfn.md
+  - 最小环: graph/最小环.md
+  - 树上背包: graph/树上背包.md
+  - 神秘构造: graph/神秘构造.md
+- 字符串:
+  - Manacher: string/manacher.md
+- 数学:
+  - 分母不存在逆元的计数: math/分母不存在逆元的计数.md
+  - 单位根反演: math/单位根反演.md
+  - 各种恒等式: math/各种恒等式.md
+  - 拉格朗日插值: math/numerial/拉格朗日插值.md
+  - 指数型生成函数: math/指数型生成函数.md
+- 数据结构:
+  - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
+  - 并查集: ds/并查集.md
+  - 线段树分治: ds/线段树分治.md
+- 模版库:
+  - DataStructure:
+    - ST表: library/DataStructure/ST表.md
+    - 伸展树: library/DataStructure/伸展树.md
+    - 左偏树: library/DataStructure/左偏树.md
+    - 并查集: library/DataStructure/并查集.md
+    - 李超树: library/DataStructure/李超树.md
+    - 树上启发式合并: library/DataStructure/树上启发式合并.md
+    - 树状数组: library/DataStructure/树状数组.md
+    - 珂朵莉树: library/DataStructure/珂朵莉树.md
+    - 笛卡尔树: library/DataStructure/笛卡尔树.md
+    - 线段树: library/DataStructure/线段树.md
+    - 高精度: library/DataStructure/高精度.md
+  - Geometry:
+    - 三角形: library/Geometry/三角形.md
+    - 凸包: library/Geometry/凸包.md
+    - 圆的并: library/Geometry/圆的并.md
+    - 平面最近点对: library/Geometry/平面最近点对.md
+  - Graph:
+    - Lca: library/Graph/Lca.md
+    - Prufer: library/Graph/Prufer.md
+    - Tarjan: library/Graph/Tarjan.md
+    - 图: library/Graph/图.md
+    - 斯坦纳树: library/Graph/斯坦纳树.md
+    - 最短路: library/Graph/最短路.md
+    - 树哈希: library/Graph/树哈希.md
+    - 树链剖分: library/Graph/树链剖分.md
+    - 流: library/Graph/流.md
+    - 点分治: library/Graph/点分治.md
+    - 矩阵树定理: library/Graph/矩阵树定理.md
+    - 虚树: library/Graph/虚树.md
+  - Math:
+    - BGSG: library/Math/BGSG.md
+    - Complex3: library/Math/Complex3.md
+    - Crt: library/Math/Crt.md
+    - Int128: library/Math/Int128.md
+    - Lucas: library/Math/Lucas.md
+    - Simpson积分: library/Math/Simpson积分.md
+    - Wheel筛: library/Math/Wheel筛.md
+    - 卡特兰数: library/Math/卡特兰数.md
+    - 哈希: library/Math/哈希.md
+    - 基元勾股数: library/Math/基元勾股数.md
+    - 多项式: library/Math/多项式.md
+    - 多项式(旧): library/Math/多项式(旧).md
+    - 拉格朗日插值: library/Math/拉格朗日插值.md
+    - 拓展gcd: library/Math/拓展gcd.md
+    - 数论分块: library/Math/数论分块.md
+    - 沃尔什卷积: library/Math/沃尔什卷积.md
+    - 矩阵: library/Math/矩阵.md
+    - 类欧几里得算法: library/Math/类欧几里得算法.md
+    - 线性基: library/Math/线性基.md
+    - 组合数: library/Math/组合数.md
+    - 自动取模: library/Math/自动取模.md
+    - 质数检验: library/Math/质数检验.md
+    - 质数筛: library/Math/质数筛.md
+    - 逆序数: library/Math/逆序数.md
+    - 闵可夫斯基和: library/Math/闵可夫斯基和.md
+    - 随机数: library/Math/随机数.md
+  - String:
+    - AC自动机: library/String/AC自动机.md
+    - Kmp: library/String/Kmp.md
+    - Manacher: library/String/Manacher.md
+    - Z函数: library/String/Z函数.md
+    - 后缀数组(SA): library/String/后缀数组(SA).md
+    - 后缀自动机(SAM): library/String/后缀自动机(SAM).md
+    - 回文自动机: library/String/回文自动机.md
+    - 字典树: library/String/字典树.md
+- 比赛总结:
+  - Atcoder:
+    - ABC:
+      - ABC437: editorial/atcoder/abc/abc437.md
+  - CodeForces:
+    - Div2:
+      - Round 1052: editorial/codeforces/div2/round1052.md
+      - Round 1061: editorial/codeforces/div2/round1061.md
+      - Round 1064: editorial/codeforces/div2/round1064.md
+      - Round 1067: editorial/codeforces/div2/round1067.md
+      - Round 1070: editorial/codeforces/div2/round1070.md
+    - Div3:
+      - Round 1042: editorial/codeforces/div3/round1042.md
+    - Edu:
+      - Round 185: editorial/codeforces/edu/round185.md
+  - 力扣:
+    - 周赛:
+      - round437: editorial/leetcode/weekly/weekly481.md
+  - 牛客竞赛:
+    - 牛客周赛:
+      - Round 123: editorial/nowcoder/weekly/round123.md
+    - 牛客练习赛:
+      - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
+- 游记:
+  - 2022:
+    - cpho 复赛 合肥: travelogue/2022/cpho39.md
+  - 2024:
+    - 2024 CMC 济南: travelogue/2024/2024cmc济南.md
+    - 2024 ICPC 南京: travelogue/2024/2024icpc南京.md
+    - 2024 ICPC 杭州: travelogue/2024/2024icpc杭州.md
+  - 2025:
+    - 2025 CCPC 重庆: travelogue/2025/2025ccpc重庆.md
+    - 2025 ICPC 武汉: travelogue/2025/2025icpc武汉.md
+    - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
+    - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
+    - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
+    - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
+  - 旅行的意义: travelogue/index.md
 plugins:
-  - search
-  - git-revision-date-localized:
-      fallback_to_build_date: true
-
+- search
+- git-revision-date-localized:
+    fallback_to_build_date: true
 theme:
   name: material
   highlightjs: true
   palette:
-    - scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
+  - scheme: default
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - scheme: slate
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
   font:
     code: Roboto Mono
   features:
-    - navigation.top
-    - navigation.tabs
-    - navigation.expand
-    - navigation.sections
-    - content.code.copy
-
+  - navigation.top
+  - navigation.tabs
+  - navigation.expand
+  - navigation.sections
+  - content.code.copy
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.tilde
-
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.details
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.superfences
+- pymdownx.tilde
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-
-extra_css:
+- javascripts/mathjax.js
+- https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+extra_css: null
