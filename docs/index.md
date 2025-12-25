@@ -1,8 +1,12 @@
 这里是 **carboxylBase 的博客**.
 
-我是一名来自西北工业大学的算法竞赛爱好者. 此博客主要用于记录我的游记, 以及一些在我看来很有意思的知识.  
+~~这里基本可以看作是主包的发**dian**空间.~~ 主要记录一些奇妙的 trick, 还有比赛总结, 以及游记.
 
-![头像](https://userpic.codeforces.org/3934169/title/fc989c37aabb3063.jpg)
+下面这个图本来是主包的 cf 头像, 莫名奇妙被 ban 了, 但是还是可以从 cf 上访问到, 很神奇.
+![old头像](https://userpic.codeforces.org/3934169/title/fc989c37aabb3063.jpg)
+
+主包现在的头像是:
+![头像](https://codeforces.com/userpic.codeforces.org/3934169/title/87233f901e93434f.jpg)
 
 主包的算法竞赛平台账号:
 
