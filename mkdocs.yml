@@ -3,7 +3,6 @@ site_url: https://carboxylbase.github.io/
 copyright: Copyright &copy; carboxylBase
 nav:
 - 主页:
-  - 最近更新: recent.md
   - 简介: index.md
 - 几何:
   - 闵可夫斯基和: geometry/闵可夫斯基和.md
