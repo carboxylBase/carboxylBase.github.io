@@ -15,7 +15,7 @@ nav:
   - 最小环: graph/最小环.md
   - 树上背包: graph/树上背包.md
   - 神秘构造: graph/神秘构造.md
-  - 最小生成树: 最小生成树.md
+  - 最小生成树: graph/最小生成树.md
 - 字符串:
   - Manacher: string/manacher.md
 - 数学:
