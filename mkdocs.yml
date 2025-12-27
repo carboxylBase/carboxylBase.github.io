@@ -15,6 +15,7 @@ nav:
   - 最小环: graph/最小环.md
   - 树上背包: graph/树上背包.md
   - 神秘构造: graph/神秘构造.md
+  - 最小生成树: 最小生成树.md
 - 字符串:
   - Manacher: string/manacher.md
 - 数学:
@@ -23,6 +24,7 @@ nav:
   - 各种恒等式: math/各种恒等式.md
   - 拉格朗日插值: math/拉格朗日插值.md
   - 指数型生成函数: math/指数型生成函数.md
+  - 高斯消元: math/高斯消元.md
 - 数据结构:
   - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
   - 并查集: ds/并查集.md
