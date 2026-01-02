@@ -11,14 +11,21 @@ nav:
   - 子集枚举: dp/子集枚举.md
   - 背包问题: dp/背包问题.md
 - 图论:
+  - 直径: graph/直径.md
   - dfn 序的妙用: graph/dfn.md
   - 最小环: graph/最小环.md
+  - 最小生成树: graph/最小生成树.md
   - 树上背包: graph/树上背包.md
   - 神秘构造: graph/神秘构造.md
-  - 最小生成树: graph/最小生成树.md
 - 字符串:
   - Manacher: string/manacher.md
 - 数学:
+  - gcd: math/gcd.md
+  - 容斥原理: math/容斥原理.md
+  - wqs二分: math/wqs二分.md
+  - 数论分块: math/数论分块.md
+  - 和间隔有关的分治: math/和间隔有关的分治.md
+  - 线性规划: math/线性规划.md
   - 分母不存在逆元的计数: math/分母不存在逆元的计数.md
   - 单位根反演: math/单位根反演.md
   - 各种恒等式: math/各种恒等式.md
@@ -121,6 +128,7 @@ nav:
     - 牛客练习赛:
       - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
 - 游记:
+  - 旅行的意义: travelogue/index.md
   - 2022:
     - cpho 复赛 合肥: travelogue/2022/cpho39.md
   - 2024:
@@ -134,7 +142,8 @@ nav:
     - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
     - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
     - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
-  - 旅行的意义: travelogue/index.md
+- 考研日记:
+  - 意向决定篇: kaoyan/index.md
 plugins:
 - search
 - git-revision-date-localized:
