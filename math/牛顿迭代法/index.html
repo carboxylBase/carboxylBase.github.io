@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://carboxylbase.github.io/library/DataStructure/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/">
+        <link rel="canonical" href="https://carboxylbase.github.io/math/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/">
       
       
-        <link rel="prev" href="../%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
+        <link rel="prev" href="../../string/manacher/">
       
       
-        <link rel="next" href="../%E7%AC%9B%E5%8D%A1%E5%B0%94%E6%A0%91/">
+        <link rel="next" href="../gcd/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>珂朵莉树 - carboxylBase</title>
+        <title>牛顿迭代法 - carboxylBase</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="carboxylBase" class="md-header__button md-logo" aria-label="carboxylBase" data-md-component="logo">
+    <a href="../.." title="carboxylBase" class="md-header__button md-logo" aria-label="carboxylBase" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              珂朵莉树
+              牛顿迭代法
             
           </span>
         </div>
@@ -211,7 +211,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../.." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../geometry/%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C/" class="md-tabs__link">
+        <a href="../../geometry/%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C/" class="md-tabs__link">
           
   
   
@@ -251,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../dp/min_plus%E5%8D%B7%E7%A7%AF/" class="md-tabs__link">
+        <a href="../../dp/min_plus%E5%8D%B7%E7%A7%AF/" class="md-tabs__link">
           
   
   
@@ -271,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../graph/%E7%9B%B4%E5%BE%84/" class="md-tabs__link">
+        <a href="../../graph/%E7%9B%B4%E5%BE%84/" class="md-tabs__link">
           
   
   
@@ -291,7 +291,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../string/manacher/" class="md-tabs__link">
+        <a href="../../string/manacher/" class="md-tabs__link">
           
   
   
@@ -307,11 +307,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../math/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -331,7 +333,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../ds/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91%26%E5%AD%97%E5%85%B8%E6%A0%91/" class="md-tabs__link">
+        <a href="../../ds/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91%26%E5%AD%97%E5%85%B8%E6%A0%91/" class="md-tabs__link">
           
   
   
@@ -347,8 +349,6 @@
   
   
   
-    
-  
   
     
     
@@ -356,13 +356,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../ST%E8%A1%A8/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../library/DataStructure/ST%E8%A1%A8/" class="md-tabs__link">
           
   
   
@@ -399,7 +397,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../editorial/atcoder/abc/abc437/" class="md-tabs__link">
+        <a href="../../editorial/atcoder/abc/abc437/" class="md-tabs__link">
           
   
   
@@ -425,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../travelogue/" class="md-tabs__link">
+        <a href="../../travelogue/" class="md-tabs__link">
           
   
   
@@ -445,7 +443,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../kaoyan/" class="md-tabs__link">
+        <a href="../../kaoyan/" class="md-tabs__link">
           
   
   
@@ -479,7 +477,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="carboxylBase" class="md-nav__button md-logo" aria-label="carboxylBase" data-md-component="logo">
+    <a href="../.." title="carboxylBase" class="md-nav__button md-logo" aria-label="carboxylBase" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -551,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -640,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../geometry/%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C/" class="md-nav__link">
+      <a href="../../geometry/%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C/" class="md-nav__link">
         
   
   
@@ -729,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dp/min_plus%E5%8D%B7%E7%A7%AF/" class="md-nav__link">
+      <a href="../../dp/min_plus%E5%8D%B7%E7%A7%AF/" class="md-nav__link">
         
   
   
@@ -757,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dp/%E5%AD%90%E9%9B%86%E6%9E%9A%E4%B8%BE/" class="md-nav__link">
+      <a href="../../dp/%E5%AD%90%E9%9B%86%E6%9E%9A%E4%B8%BE/" class="md-nav__link">
         
   
   
@@ -785,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dp/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../dp/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   
@@ -874,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graph/%E7%9B%B4%E5%BE%84/" class="md-nav__link">
+      <a href="../../graph/%E7%9B%B4%E5%BE%84/" class="md-nav__link">
         
   
   
@@ -902,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graph/dfn/" class="md-nav__link">
+      <a href="../../graph/dfn/" class="md-nav__link">
         
   
   
@@ -930,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graph/%E6%9C%80%E5%B0%8F%E7%8E%AF/" class="md-nav__link">
+      <a href="../../graph/%E6%9C%80%E5%B0%8F%E7%8E%AF/" class="md-nav__link">
         
   
   
@@ -958,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graph/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" class="md-nav__link">
+      <a href="../../graph/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -986,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graph/%E6%A0%91%E4%B8%8A%E8%83%8C%E5%8C%85/" class="md-nav__link">
+      <a href="../../graph/%E6%A0%91%E4%B8%8A%E8%83%8C%E5%8C%85/" class="md-nav__link">
         
   
   
@@ -1014,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graph/%E7%A5%9E%E7%A7%98%E6%9E%84%E9%80%A0/" class="md-nav__link">
+      <a href="../../graph/%E7%A5%9E%E7%A7%98%E6%9E%84%E9%80%A0/" class="md-nav__link">
         
   
   
@@ -1103,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../string/manacher/" class="md-nav__link">
+      <a href="../../string/manacher/" class="md-nav__link">
         
   
   
@@ -1135,28 +1133,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1174,7 +1175,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1189,10 +1190,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../math/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    牛顿迭代法
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1208,6 +1234,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解多项式
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1220,7 +1275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/gcd/" class="md-nav__link">
+      <a href="../gcd/" class="md-nav__link">
         
   
   
@@ -1248,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86/" class="md-nav__link">
+      <a href="../%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86/" class="md-nav__link">
         
   
   
@@ -1276,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/wqs%E4%BA%8C%E5%88%86/" class="md-nav__link">
+      <a href="../wqs%E4%BA%8C%E5%88%86/" class="md-nav__link">
         
   
   
@@ -1304,7 +1359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/" class="md-nav__link">
+      <a href="../%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/" class="md-nav__link">
         
   
   
@@ -1332,7 +1387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E5%92%8C%E9%97%B4%E9%9A%94%E6%9C%89%E5%85%B3%E7%9A%84%E5%88%86%E6%B2%BB/" class="md-nav__link">
+      <a href="../%E5%92%8C%E9%97%B4%E9%9A%94%E6%9C%89%E5%85%B3%E7%9A%84%E5%88%86%E6%B2%BB/" class="md-nav__link">
         
   
   
@@ -1360,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/" class="md-nav__link">
+      <a href="../%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/" class="md-nav__link">
         
   
   
@@ -1388,7 +1443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E5%88%86%E6%AF%8D%E4%B8%8D%E5%AD%98%E5%9C%A8%E9%80%86%E5%85%83%E7%9A%84%E8%AE%A1%E6%95%B0/" class="md-nav__link">
+      <a href="../%E5%88%86%E6%AF%8D%E4%B8%8D%E5%AD%98%E5%9C%A8%E9%80%86%E5%85%83%E7%9A%84%E8%AE%A1%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -1416,7 +1471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E5%8D%95%E4%BD%8D%E6%A0%B9%E5%8F%8D%E6%BC%94/" class="md-nav__link">
+      <a href="../%E5%8D%95%E4%BD%8D%E6%A0%B9%E5%8F%8D%E6%BC%94/" class="md-nav__link">
         
   
   
@@ -1444,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E5%90%84%E7%A7%8D%E6%81%92%E7%AD%89%E5%BC%8F/" class="md-nav__link">
+      <a href="../%E5%90%84%E7%A7%8D%E6%81%92%E7%AD%89%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -1472,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%8F%92%E5%80%BC/" class="md-nav__link">
+      <a href="../%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%8F%92%E5%80%BC/" class="md-nav__link">
         
   
   
@@ -1500,7 +1555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E6%8C%87%E6%95%B0%E5%9E%8B%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/" class="md-nav__link">
+      <a href="../%E6%8C%87%E6%95%B0%E5%9E%8B%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -1528,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../math/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/" class="md-nav__link">
+      <a href="../%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/" class="md-nav__link">
         
   
   
@@ -1617,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ds/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91%26%E5%AD%97%E5%85%B8%E6%A0%91/" class="md-nav__link">
+      <a href="../../ds/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91%26%E5%AD%97%E5%85%B8%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -1645,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ds/%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="md-nav__link">
+      <a href="../../ds/%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="md-nav__link">
         
   
   
@@ -1673,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ds/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/" class="md-nav__link">
+      <a href="../../ds/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/" class="md-nav__link">
         
   
   
@@ -1705,31 +1760,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -1747,7 +1799,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1762,31 +1814,28 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_1" >
         
           
-          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
             
   
   
@@ -1804,7 +1853,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1822,7 +1871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ST%E8%A1%A8/" class="md-nav__link">
+      <a href="../../library/DataStructure/ST%E8%A1%A8/" class="md-nav__link">
         
   
   
@@ -1850,7 +1899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E4%BC%B8%E5%B1%95%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E4%BC%B8%E5%B1%95%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -1878,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%B7%A6%E5%81%8F%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E5%B7%A6%E5%81%8F%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -1906,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="md-nav__link">
         
   
   
@@ -1934,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E6%9D%8E%E8%B6%85%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E6%9D%8E%E8%B6%85%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -1962,7 +2011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/" class="md-nav__link">
         
   
   
@@ -1990,7 +2039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" class="md-nav__link">
         
   
   
@@ -2015,19 +2064,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../library/DataStructure/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -2043,7 +2083,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2056,7 +2095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E7%AC%9B%E5%8D%A1%E5%B0%94%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E7%AC%9B%E5%8D%A1%E5%B0%94%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -2084,7 +2123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E7%BA%BF%E6%AE%B5%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E7%BA%BF%E6%AE%B5%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -2112,7 +2151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E9%AB%98%E7%B2%BE%E5%BA%A6/" class="md-nav__link">
+      <a href="../../library/DataStructure/%E9%AB%98%E7%B2%BE%E5%BA%A6/" class="md-nav__link">
         
   
   
@@ -2154,13 +2193,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -2169,7 +2205,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
         
           
-          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
             
   
   
@@ -2205,7 +2241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Geometry/%E4%B8%89%E8%A7%92%E5%BD%A2/" class="md-nav__link">
+      <a href="../../library/Geometry/%E4%B8%89%E8%A7%92%E5%BD%A2/" class="md-nav__link">
         
   
   
@@ -2233,7 +2269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Geometry/%E5%87%B8%E5%8C%85/" class="md-nav__link">
+      <a href="../../library/Geometry/%E5%87%B8%E5%8C%85/" class="md-nav__link">
         
   
   
@@ -2261,7 +2297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Geometry/%E5%9C%86%E7%9A%84%E5%B9%B6/" class="md-nav__link">
+      <a href="../../library/Geometry/%E5%9C%86%E7%9A%84%E5%B9%B6/" class="md-nav__link">
         
   
   
@@ -2289,7 +2325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Geometry/%E5%B9%B3%E9%9D%A2%E6%9C%80%E8%BF%91%E7%82%B9%E5%AF%B9/" class="md-nav__link">
+      <a href="../../library/Geometry/%E5%B9%B3%E9%9D%A2%E6%9C%80%E8%BF%91%E7%82%B9%E5%AF%B9/" class="md-nav__link">
         
   
   
@@ -2331,13 +2367,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -2346,7 +2379,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
         
           
-          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
             
   
   
@@ -2382,7 +2415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/Lca/" class="md-nav__link">
+      <a href="../../library/Graph/Lca/" class="md-nav__link">
         
   
   
@@ -2410,7 +2443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/Prufer/" class="md-nav__link">
+      <a href="../../library/Graph/Prufer/" class="md-nav__link">
         
   
   
@@ -2438,7 +2471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/Tarjan/" class="md-nav__link">
+      <a href="../../library/Graph/Tarjan/" class="md-nav__link">
         
   
   
@@ -2466,7 +2499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E5%9B%BE/" class="md-nav__link">
+      <a href="../../library/Graph/%E5%9B%BE/" class="md-nav__link">
         
   
   
@@ -2494,7 +2527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/Graph/%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -2522,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E6%9C%80%E7%9F%AD%E8%B7%AF/" class="md-nav__link">
+      <a href="../../library/Graph/%E6%9C%80%E7%9F%AD%E8%B7%AF/" class="md-nav__link">
         
   
   
@@ -2550,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E6%A0%91%E5%93%88%E5%B8%8C/" class="md-nav__link">
+      <a href="../../library/Graph/%E6%A0%91%E5%93%88%E5%B8%8C/" class="md-nav__link">
         
   
   
@@ -2578,7 +2611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" class="md-nav__link">
+      <a href="../../library/Graph/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" class="md-nav__link">
         
   
   
@@ -2606,7 +2639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E6%B5%81/" class="md-nav__link">
+      <a href="../../library/Graph/%E6%B5%81/" class="md-nav__link">
         
   
   
@@ -2634,7 +2667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E7%82%B9%E5%88%86%E6%B2%BB/" class="md-nav__link">
+      <a href="../../library/Graph/%E7%82%B9%E5%88%86%E6%B2%BB/" class="md-nav__link">
         
   
   
@@ -2662,7 +2695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86/" class="md-nav__link">
+      <a href="../../library/Graph/%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86/" class="md-nav__link">
         
   
   
@@ -2690,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Graph/%E8%99%9A%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/Graph/%E8%99%9A%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -2732,13 +2765,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -2747,7 +2777,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_4" >
         
           
-          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
             
   
   
@@ -2783,7 +2813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/BGSG/" class="md-nav__link">
+      <a href="../../library/Math/BGSG/" class="md-nav__link">
         
   
   
@@ -2811,7 +2841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/Complex3/" class="md-nav__link">
+      <a href="../../library/Math/Complex3/" class="md-nav__link">
         
   
   
@@ -2839,7 +2869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/Crt/" class="md-nav__link">
+      <a href="../../library/Math/Crt/" class="md-nav__link">
         
   
   
@@ -2867,7 +2897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/Int128/" class="md-nav__link">
+      <a href="../../library/Math/Int128/" class="md-nav__link">
         
   
   
@@ -2895,7 +2925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/Lucas/" class="md-nav__link">
+      <a href="../../library/Math/Lucas/" class="md-nav__link">
         
   
   
@@ -2923,7 +2953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/Simpson%E7%A7%AF%E5%88%86/" class="md-nav__link">
+      <a href="../../library/Math/Simpson%E7%A7%AF%E5%88%86/" class="md-nav__link">
         
   
   
@@ -2951,7 +2981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/Wheel%E7%AD%9B/" class="md-nav__link">
+      <a href="../../library/Math/Wheel%E7%AD%9B/" class="md-nav__link">
         
   
   
@@ -2979,7 +3009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0/" class="md-nav__link">
+      <a href="../../library/Math/%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -3007,7 +3037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E5%93%88%E5%B8%8C/" class="md-nav__link">
+      <a href="../../library/Math/%E5%93%88%E5%B8%8C/" class="md-nav__link">
         
   
   
@@ -3035,7 +3065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E5%9F%BA%E5%85%83%E5%8B%BE%E8%82%A1%E6%95%B0/" class="md-nav__link">
+      <a href="../../library/Math/%E5%9F%BA%E5%85%83%E5%8B%BE%E8%82%A1%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -3063,7 +3093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
+      <a href="../../library/Math/%E5%A4%9A%E9%A1%B9%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -3091,7 +3121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E5%A4%9A%E9%A1%B9%E5%BC%8F%28%E6%97%A7%29/" class="md-nav__link">
+      <a href="../../library/Math/%E5%A4%9A%E9%A1%B9%E5%BC%8F%28%E6%97%A7%29/" class="md-nav__link">
         
   
   
@@ -3119,7 +3149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%8F%92%E5%80%BC/" class="md-nav__link">
+      <a href="../../library/Math/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%8F%92%E5%80%BC/" class="md-nav__link">
         
   
   
@@ -3147,7 +3177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E6%8B%93%E5%B1%95gcd/" class="md-nav__link">
+      <a href="../../library/Math/%E6%8B%93%E5%B1%95gcd/" class="md-nav__link">
         
   
   
@@ -3175,7 +3205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/" class="md-nav__link">
+      <a href="../../library/Math/%E6%95%B0%E8%AE%BA%E5%88%86%E5%9D%97/" class="md-nav__link">
         
   
   
@@ -3203,7 +3233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E6%B2%83%E5%B0%94%E4%BB%80%E5%8D%B7%E7%A7%AF/" class="md-nav__link">
+      <a href="../../library/Math/%E6%B2%83%E5%B0%94%E4%BB%80%E5%8D%B7%E7%A7%AF/" class="md-nav__link">
         
   
   
@@ -3231,7 +3261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E7%9F%A9%E9%98%B5/" class="md-nav__link">
+      <a href="../../library/Math/%E7%9F%A9%E9%98%B5/" class="md-nav__link">
         
   
   
@@ -3259,7 +3289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E7%B1%BB%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/" class="md-nav__link">
+      <a href="../../library/Math/%E7%B1%BB%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -3287,7 +3317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E7%BA%BF%E6%80%A7%E5%9F%BA/" class="md-nav__link">
+      <a href="../../library/Math/%E7%BA%BF%E6%80%A7%E5%9F%BA/" class="md-nav__link">
         
   
   
@@ -3315,7 +3345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E7%BB%84%E5%90%88%E6%95%B0/" class="md-nav__link">
+      <a href="../../library/Math/%E7%BB%84%E5%90%88%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -3343,7 +3373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E8%87%AA%E5%8A%A8%E5%8F%96%E6%A8%A1/" class="md-nav__link">
+      <a href="../../library/Math/%E8%87%AA%E5%8A%A8%E5%8F%96%E6%A8%A1/" class="md-nav__link">
         
   
   
@@ -3371,7 +3401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E8%B4%A8%E6%95%B0%E6%A3%80%E9%AA%8C/" class="md-nav__link">
+      <a href="../../library/Math/%E8%B4%A8%E6%95%B0%E6%A3%80%E9%AA%8C/" class="md-nav__link">
         
   
   
@@ -3399,7 +3429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E8%B4%A8%E6%95%B0%E7%AD%9B/" class="md-nav__link">
+      <a href="../../library/Math/%E8%B4%A8%E6%95%B0%E7%AD%9B/" class="md-nav__link">
         
   
   
@@ -3427,7 +3457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E9%80%86%E5%BA%8F%E6%95%B0/" class="md-nav__link">
+      <a href="../../library/Math/%E9%80%86%E5%BA%8F%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -3455,7 +3485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C/" class="md-nav__link">
+      <a href="../../library/Math/%E9%97%B5%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C/" class="md-nav__link">
         
   
   
@@ -3483,7 +3513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Math/%E9%9A%8F%E6%9C%BA%E6%95%B0/" class="md-nav__link">
+      <a href="../../library/Math/%E9%9A%8F%E6%9C%BA%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -3525,13 +3555,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -3540,7 +3567,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_5" >
         
           
-          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
             
   
   
@@ -3576,7 +3603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/" class="md-nav__link">
+      <a href="../../library/String/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/" class="md-nav__link">
         
   
   
@@ -3604,7 +3631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/Kmp/" class="md-nav__link">
+      <a href="../../library/String/Kmp/" class="md-nav__link">
         
   
   
@@ -3632,7 +3659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/Manacher/" class="md-nav__link">
+      <a href="../../library/String/Manacher/" class="md-nav__link">
         
   
   
@@ -3660,7 +3687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/Z%E5%87%BD%E6%95%B0/" class="md-nav__link">
+      <a href="../../library/String/Z%E5%87%BD%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -3688,7 +3715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84%28SA%29/" class="md-nav__link">
+      <a href="../../library/String/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84%28SA%29/" class="md-nav__link">
         
   
   
@@ -3716,7 +3743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA%28SAM%29/" class="md-nav__link">
+      <a href="../../library/String/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA%28SAM%29/" class="md-nav__link">
         
   
   
@@ -3744,7 +3771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/%E5%9B%9E%E6%96%87%E8%87%AA%E5%8A%A8%E6%9C%BA/" class="md-nav__link">
+      <a href="../../library/String/%E5%9B%9E%E6%96%87%E8%87%AA%E5%8A%A8%E6%9C%BA/" class="md-nav__link">
         
   
   
@@ -3772,7 +3799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../String/%E5%AD%97%E5%85%B8%E6%A0%91/" class="md-nav__link">
+      <a href="../../library/String/%E5%AD%97%E5%85%B8%E6%A0%91/" class="md-nav__link">
         
   
   
@@ -3977,7 +4004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/atcoder/abc/abc437/" class="md-nav__link">
+      <a href="../../editorial/atcoder/abc/abc437/" class="md-nav__link">
         
   
   
@@ -4129,7 +4156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/div2/round1052/" class="md-nav__link">
+      <a href="../../editorial/codeforces/div2/round1052/" class="md-nav__link">
         
   
   
@@ -4157,7 +4184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/div2/round1061/" class="md-nav__link">
+      <a href="../../editorial/codeforces/div2/round1061/" class="md-nav__link">
         
   
   
@@ -4185,7 +4212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/div2/round1064/" class="md-nav__link">
+      <a href="../../editorial/codeforces/div2/round1064/" class="md-nav__link">
         
   
   
@@ -4213,7 +4240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/div2/round1067/" class="md-nav__link">
+      <a href="../../editorial/codeforces/div2/round1067/" class="md-nav__link">
         
   
   
@@ -4241,7 +4268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/div2/round1070/" class="md-nav__link">
+      <a href="../../editorial/codeforces/div2/round1070/" class="md-nav__link">
         
   
   
@@ -4331,7 +4358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/div3/round1042/" class="md-nav__link">
+      <a href="../../editorial/codeforces/div3/round1042/" class="md-nav__link">
         
   
   
@@ -4421,7 +4448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/edu/round185/" class="md-nav__link">
+      <a href="../../editorial/codeforces/edu/round185/" class="md-nav__link">
         
   
   
@@ -4449,7 +4476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/codeforces/edu/round186/" class="md-nav__link">
+      <a href="../../editorial/codeforces/edu/round186/" class="md-nav__link">
         
   
   
@@ -4601,7 +4628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/leetcode/weekly/weekly481/" class="md-nav__link">
+      <a href="../../editorial/leetcode/weekly/weekly481/" class="md-nav__link">
         
   
   
@@ -4753,7 +4780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/nowcoder/weekly/round123/" class="md-nav__link">
+      <a href="../../editorial/nowcoder/weekly/round123/" class="md-nav__link">
         
   
   
@@ -4843,7 +4870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../editorial/nowcoder/practice/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B146/" class="md-nav__link">
+      <a href="../../editorial/nowcoder/practice/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B146/" class="md-nav__link">
         
   
   
@@ -4948,7 +4975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/" class="md-nav__link">
+      <a href="../../travelogue/" class="md-nav__link">
         
   
   
@@ -5030,7 +5057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2022/cpho39/" class="md-nav__link">
+      <a href="../../travelogue/2022/cpho39/" class="md-nav__link">
         
   
   
@@ -5120,7 +5147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2024/2024cmc%E6%B5%8E%E5%8D%97/" class="md-nav__link">
+      <a href="../../travelogue/2024/2024cmc%E6%B5%8E%E5%8D%97/" class="md-nav__link">
         
   
   
@@ -5148,7 +5175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2024/2024icpc%E5%8D%97%E4%BA%AC/" class="md-nav__link">
+      <a href="../../travelogue/2024/2024icpc%E5%8D%97%E4%BA%AC/" class="md-nav__link">
         
   
   
@@ -5176,7 +5203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2024/2024icpc%E6%9D%AD%E5%B7%9E/" class="md-nav__link">
+      <a href="../../travelogue/2024/2024icpc%E6%9D%AD%E5%B7%9E/" class="md-nav__link">
         
   
   
@@ -5266,7 +5293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2025/2025ccpc%E9%87%8D%E5%BA%86/" class="md-nav__link">
+      <a href="../../travelogue/2025/2025ccpc%E9%87%8D%E5%BA%86/" class="md-nav__link">
         
   
   
@@ -5294,7 +5321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2025/2025icpc%E6%AD%A6%E6%B1%89/" class="md-nav__link">
+      <a href="../../travelogue/2025/2025icpc%E6%AD%A6%E6%B1%89/" class="md-nav__link">
         
   
   
@@ -5322,7 +5349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2025/2025icpc%E6%B2%88%E9%98%B3/" class="md-nav__link">
+      <a href="../../travelogue/2025/2025icpc%E6%B2%88%E9%98%B3/" class="md-nav__link">
         
   
   
@@ -5350,7 +5377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2025/2025%E7%99%BE%E5%BA%A6%E4%B9%8B%E6%98%9F/" class="md-nav__link">
+      <a href="../../travelogue/2025/2025%E7%99%BE%E5%BA%A6%E4%B9%8B%E6%98%9F/" class="md-nav__link">
         
   
   
@@ -5378,7 +5405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2025/2025%E9%99%95%E8%A5%BF%E7%9C%81%E8%B5%9B/" class="md-nav__link">
+      <a href="../../travelogue/2025/2025%E9%99%95%E8%A5%BF%E7%9C%81%E8%B5%9B/" class="md-nav__link">
         
   
   
@@ -5406,7 +5433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../travelogue/2025/2025%E8%A5%BF%E5%AE%89%E9%82%80%E8%AF%B7%E8%B5%9B/" class="md-nav__link">
+      <a href="../../travelogue/2025/2025%E8%A5%BF%E5%AE%89%E9%82%80%E8%AF%B7%E8%B5%9B/" class="md-nav__link">
         
   
   
@@ -5503,7 +5530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kaoyan/" class="md-nav__link">
+      <a href="../../kaoyan/" class="md-nav__link">
         
   
   
@@ -5548,8 +5575,25 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解多项式
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -5566,137 +5610,24 @@
 
 
 
-<h1 id="_1">珂朵莉树</h1>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#define DEBUG 1</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">using</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="p">;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">using</span><span class="w"> </span><span class="n">pii</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">using</span><span class="w"> </span><span class="n">pll</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="n">ll</span><span class="p">,</span><span class="n">ll</span><span class="o">&gt;</span><span class="p">;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">const</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2000000</span><span class="p">;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">const</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="n">INF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5e18</span><span class="p">;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">const</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="n">MOD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e9</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1">// 注意下标别搞错了, 什么从 0 开始之类...</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">struct</span><span class="w"> </span><span class="nc">ChthollyTree</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="n">Node</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">L_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">R_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">V_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L_</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">R_</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">V_</span><span class="p">;}</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="o">&lt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Node</span><span class="o">&amp;</span><span class="w"> </span><span class="n">A</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">l</span><span class="p">;}</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p">};</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="n">set</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nodes</span><span class="p">;</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="c1">// 注意初始化插入全 1 段.</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="c1">// 注意插入 n + 1</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="n">ChthollyTree</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">N_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="n">nodes</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">N_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="n">set</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">split</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">lower_bound</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">end</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">it</span><span class="p">;</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="o">--</span><span class="w"> </span><span class="n">it</span><span class="p">;</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">v</span><span class="p">;</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">        </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">        </span><span class="n">nodes</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">));</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">)).</span><span class="n">first</span><span class="p">;</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">assign</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">split</span><span class="p">(</span><span class="n">r</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">itl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">split</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">itl</span><span class="p">,</span><span class="w"> </span><span class="n">itr</span><span class="p">);</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">        </span><span class="n">nodes</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">));</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="p">};</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>
-<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="k">struct</span><span class="w"> </span><span class="nc">ChthollyTree</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">M</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e8</span><span class="p">;</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">;</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="o">&lt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Node</span><span class="o">&amp;</span><span class="w"> </span><span class="n">A</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">l</span><span class="p">;</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">r</span><span class="p">;</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">        </span><span class="n">Node</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">L_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">R_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">            </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L_</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">R_</span><span class="p">;</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">    </span><span class="p">};</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">    </span><span class="n">set</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nodes</span><span class="p">;</span>
-<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>
-<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="w">        </span><span class="n">nodes</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">M</span><span class="p">));</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>
-<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">insert</span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="w">        </span><span class="n">Node</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>
-<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">        </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span><span class="w"> </span><span class="n">val</span><span class="p">;</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>
-<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a><span class="w">            </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prev</span><span class="p">(</span><span class="n">nodes</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a><span class="w">                    </span><span class="n">val</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="p">,</span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="mi">-1</span><span class="p">));</span>
-<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a><span class="w">                </span><span class="p">}</span>
-<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a><span class="w">                    </span><span class="n">val</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="p">));</span>
-<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a><span class="w">                </span><span class="p">}</span>
-<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a><span class="w">                </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a><span class="w">                    </span><span class="n">val</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="p">,</span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="mi">-1</span><span class="p">));</span>
-<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a><span class="w">                </span><span class="p">}</span>
-<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a><span class="w">                </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a><span class="w">                </span><span class="o">++</span><span class="w"> </span><span class="n">it</span><span class="p">;</span>
-<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">begin</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a>
-<a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a><span class="w">                </span><span class="o">--</span><span class="w"> </span><span class="n">it</span><span class="p">;</span>
-<a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a><span class="w">                        </span><span class="n">val</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="p">,</span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="mi">-1</span><span class="p">));</span>
-<a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a><span class="w">                    </span><span class="p">}</span>
-<a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-98" name="__codelineno-0-98" href="#__codelineno-0-98"></a><span class="w">                        </span><span class="n">val</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="p">));</span>
-<a id="__codelineno-0-99" name="__codelineno-0-99" href="#__codelineno-0-99"></a><span class="w">                    </span><span class="p">}</span>
-<a id="__codelineno-0-100" name="__codelineno-0-100" href="#__codelineno-0-100"></a><span class="w">                    </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-<a id="__codelineno-0-101" name="__codelineno-0-101" href="#__codelineno-0-101"></a><span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-102" name="__codelineno-0-102" href="#__codelineno-0-102"></a><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-103" name="__codelineno-0-103" href="#__codelineno-0-103"></a><span class="w">                        </span><span class="n">val</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="p">,</span><span class="n">a</span><span class="p">.</span><span class="n">l</span><span class="mi">-1</span><span class="p">));</span>
-<a id="__codelineno-0-104" name="__codelineno-0-104" href="#__codelineno-0-104"></a><span class="w">                    </span><span class="p">}</span>
-<a id="__codelineno-0-105" name="__codelineno-0-105" href="#__codelineno-0-105"></a><span class="w">                    </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-<a id="__codelineno-0-106" name="__codelineno-0-106" href="#__codelineno-0-106"></a><span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-107" name="__codelineno-0-107" href="#__codelineno-0-107"></a><span class="w">                    </span><span class="o">++</span><span class="w"> </span><span class="n">it</span><span class="p">;</span>
-<a id="__codelineno-0-108" name="__codelineno-0-108" href="#__codelineno-0-108"></a><span class="w">                </span><span class="p">}</span>
-<a id="__codelineno-0-109" name="__codelineno-0-109" href="#__codelineno-0-109"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-0-110" name="__codelineno-0-110" href="#__codelineno-0-110"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-0-111" name="__codelineno-0-111" href="#__codelineno-0-111"></a>
-<a id="__codelineno-0-112" name="__codelineno-0-112" href="#__codelineno-0-112"></a><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">end</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-113" name="__codelineno-0-113" href="#__codelineno-0-113"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-114" name="__codelineno-0-114" href="#__codelineno-0-114"></a><span class="w">                </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-<a id="__codelineno-0-115" name="__codelineno-0-115" href="#__codelineno-0-115"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-116" name="__codelineno-0-116" href="#__codelineno-0-116"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-117" name="__codelineno-0-117" href="#__codelineno-0-117"></a><span class="w">                    </span><span class="n">val</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">Node</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">r</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">r</span><span class="p">));</span>
-<a id="__codelineno-0-118" name="__codelineno-0-118" href="#__codelineno-0-118"></a><span class="w">                </span><span class="p">}</span>
-<a id="__codelineno-0-119" name="__codelineno-0-119" href="#__codelineno-0-119"></a><span class="w">                </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodes</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
-<a id="__codelineno-0-120" name="__codelineno-0-120" href="#__codelineno-0-120"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-0-121" name="__codelineno-0-121" href="#__codelineno-0-121"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-0-122" name="__codelineno-0-122" href="#__codelineno-0-122"></a>
-<a id="__codelineno-0-123" name="__codelineno-0-123" href="#__codelineno-0-123"></a><span class="w">        </span><span class="n">nodes</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
-<a id="__codelineno-0-124" name="__codelineno-0-124" href="#__codelineno-0-124"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">val</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-125" name="__codelineno-0-125" href="#__codelineno-0-125"></a><span class="w">            </span><span class="n">nodes</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
-<a id="__codelineno-0-126" name="__codelineno-0-126" href="#__codelineno-0-126"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-0-127" name="__codelineno-0-127" href="#__codelineno-0-127"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
-<a id="__codelineno-0-128" name="__codelineno-0-128" href="#__codelineno-0-128"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-129" name="__codelineno-0-129" href="#__codelineno-0-129"></a><span class="p">}</span><span class="w"> </span><span class="p">;</span>
-</code></pre></div>
+  <h1>牛顿迭代法</h1>
+
+<h2 id="_1">解多项式</h2>
+<p>对于形如 </p>
+<div class="arithmatex">\[
+G(F(x)) \equiv 0 \pmod{x^n}
+\]</div>
+<p>形式的式子, 我们可以用牛顿迭代求前 n 项系数.</p>
+<p>设 <span class="arithmatex">\(F_0(x)\)</span> 表示</p>
+<div class="arithmatex">\[
+G(F(x)) \equiv 0 \pmod{x^{\lceil \frac{n}{2} \rceil}}
+\]</div>
+<p>根据牛顿迭代的式子, 有</p>
+<div class="arithmatex">\[
+F(x) = F_0(x) - \frac{G(F_0(x))}{G^{'}(F_0(x))} 
+\]</div>
+<p>其中的导数是对 <span class="arithmatex">\(F(x)\)</span> 求导.</p>
+<p>显然迭代 <span class="arithmatex">\(log\)</span> 次就可以得到答案. 值得注意的写代码时最好把 n++, 这样就可以避免边界问题.</p>
 
 
 
@@ -5717,7 +5648,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 17, 2025 14:47:55 UTC">December 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 3, 2026 06:34:56 UTC">January 3, 2026</span>
   </span>
 
     
@@ -5777,12 +5708,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.top", "navigation.tabs", "navigation.expand", "navigation.sections", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.expand", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
