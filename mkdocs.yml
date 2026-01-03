@@ -20,6 +20,7 @@ nav:
 - 字符串:
   - Manacher: string/manacher.md
 - 数学:
+  - 牛顿迭代法: math/牛顿迭代法.md
   - gcd: math/gcd.md
   - 容斥原理: math/容斥原理.md
   - wqs二分: math/wqs二分.md
