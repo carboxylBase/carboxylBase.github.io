@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exp" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -313,7 +313,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../gcd/" class="md-tabs__link">
+        <a href="../%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/" class="md-tabs__link">
           
   
   
@@ -1193,6 +1193,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    牛顿迭代法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../gcd/" class="md-nav__link">
         
   
@@ -1529,21 +1557,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exp" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        多项式 exp
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ln" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        多项式 ln
+        概念引入
       
     </span>
   </a>
@@ -5566,21 +5583,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exp" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        多项式 exp
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ln" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        多项式 ln
+        概念引入
       
     </span>
   </a>
@@ -5606,25 +5612,29 @@
 
   <h1>指数型生成函数</h1>
 
-<h2 id="exp">多项式 exp</h2>
-<p>我们从一个例题入手, 引入指数型生成函数, 并介绍多项式 exp 的技巧.</p>
-<p>统计有多少种长度为 <span class="arithmatex">\(n\)</span> 的排列 <span class="arithmatex">\(P\)</span> 满足 <span class="arithmatex">\(P_{P_i} \ne i\)</span>, 答案对 <span class="arithmatex">\(998244353\)</span> 取模. <a href="https://atcoder.jp/contests/fps-24/tasks/fps_24_l">原题链接</a>.</p>
-<p>考虑从 <span class="arithmatex">\(i\)</span> 向 <span class="arithmatex">\(P_i\)</span> 连一条边, 最后会形成若干的环, 如果不存在大小为 <span class="arithmatex">\(1\)</span> 或者 <span class="arithmatex">\(2\)</span> 的环, 就是符合要求的排列. </p>
-<p>不妨先考虑每一个环有多少种方案, 记一个大小为 <span class="arithmatex">\(n\)</span> 的环有 <span class="arithmatex">\(g_i\)</span> 种方案, 显然 <span class="arithmatex">\(g_i = \frac{i!}{i} = (i - 1)!\)</span> .</p>
-<p>下面, 我们考虑这些环是如何组合在一起的. 考虑 <span class="arithmatex">\(k\)</span> 个环拼在一起对答案的贡献, 记第 <span class="arithmatex">\(i\)</span> 个环大小为 <span class="arithmatex">\(a_i\)</span>, 记 <span class="arithmatex">\(m = \sum_{i=1}^{k} a_i\)</span>, 那么这 <span class="arithmatex">\(k\)</span> 个环应当对大小为 <span class="arithmatex">\(m\)</span> 的排列产生贡献, 不考虑标号时, 贡献应当是 <span class="arithmatex">\(\prod_{i=1}^{k} g_{a_i}\)</span>, 考虑给每个环分配标号, 也就是一堆组合数乘在一起, 发现最后很多项都消掉了, 只剩下 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{1}{a_i!}\)</span>, 于是总的贡献就是 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{g_{a_i}}{a_i!}\)</span>.</p>
-<p>从多项式的角度考虑这个式子, 如果将其变形为 <span class="arithmatex">\(\prod_{i=1}^{k} \frac{g_{a_i} \cdot x^i}{a_i!}\)</span>, 其中 <span class="arithmatex">\(x\)</span> 是自变量, 那么最终 <span class="arithmatex">\(x\)</span> 的幂次恰好就是 <span class="arithmatex">\(m\)</span>.</p>
-<p>这启示我们定义 <span class="arithmatex">\(G(x) = \sum_{i=3}^{\infty} \frac{g_i \cdot x^i}{i!}\)</span> 表示单个环的贡献.</p>
-<p>含有 <span class="arithmatex">\(k\)</span> 个环的序列可以表示为 <span class="arithmatex">\(\frac{{G(x)}^k}{k!}\)</span> , 那么答案可以用多项式表示为:</p>
+<h2 id="_1">概念引入</h2>
+<p>指数型生成函数简称 <span class="arithmatex">\(EGF\)</span>.</p>
+<p>考虑这样的计数问题, 现在有 x 个本质相同的物品可以构造出 f(x) 种具有某种特殊性质的结构, 然后我们发现贡献的方式是 <span class="arithmatex">\(f(x) = f(x - i) * f(i)\)</span>. 我们需要计算 <span class="arithmatex">\(f(n)\)</span>.</p>
+<p>考虑有标号的情况, 无标号的情况可以由有标号的除以 n! 得来.</p>
+<p>考虑一种贡献, 共 m 项组合在一起:</p>
 <div class="arithmatex">\[
-\begin{aligned}
-F(x) &amp;= 1 + \sum_{i=1}^{\infty} \frac{G(x)^i}{i!} \\
-     &amp;= e^{G(x)}
-\end{aligned}
+\frac{n! \cdot \prod_{i = 1}^{m} f(a_i)} {m! \cdot \prod_{i=1}^{m} a_i!}
 \]</div>
-<p>加 <span class="arithmatex">\(1\)</span> 是为了凑出 <span class="arithmatex">\(e^x\)</span> 的泰勒展开式. 于是我们可以用多项式exp解决此题.</p>
-<h2 id="ln">多项式 ln</h2>
-<p>以洛谷P6295为例, 这篇<a href="https://www.cnblogs.com/apjifengc/p/16669947.html">题解</a>的解释已经相当详尽了, 主包不再赘述. 我们主要讨论题解的最后的一部分, <span class="arithmatex">\(F(x)\)</span> 怎么导出答案.</p>
-<p>记 <span class="arithmatex">\(F'(x) = \sum_{i=0}^{} \frac{f_i}{i!} x^i\)</span> . 其中 <span class="arithmatex">\(f_i\)</span> 表示 <span class="arithmatex">\(i\)</span> 个点形成的有标号弱联通无标号 DAG 的数量. 那么 <span class="arithmatex">\(f_i / i!\)</span> 自然就表示无标号情形下的方案数, 定义 <span class="arithmatex">\(G(x) = \sum_{i=0}^{}g_i x^i\)</span> 表示无标号情况下, 强连通 DAG 的方案数, 那么 <span class="arithmatex">\(F'(x) = e^{G(x)}\)</span> ,<span class="arithmatex">\(G(x) = ln(F'(x))\)</span>. 最终答案就是 <span class="arithmatex">\(g_i \cdot i!\)</span> .</p>
+<div class="arithmatex">\[
+\sum_{i = 1}^{n} a_i = n
+\]</div>
+<p>其中, <span class="arithmatex">\(f(a_i) / a_i!\)</span> 表示将其转换为不考虑标号的方案数, 然后最终乘上 <span class="arithmatex">\(n!\)</span> 分配标号, 然考虑到这 m 个结构的相对顺序不重要, 多除一个 <span class="arithmatex">\(m!\)</span>.</p>
+<p>这启发我们如果定义:</p>
+<div class="arithmatex">\[
+F(x) = \sum_{i=1} \frac{f(i) \cdot x^i}{i!}
+\]</div>
+<p>那么:</p>
+<div class="arithmatex">\[
+F(x) = \exp(F(x)) + C(x)
+\]</div>
+<p>其中 <span class="arithmatex">\(C(x)\)</span> 是根据初值条件确定的常数.</p>
+<p>其实这个问题也有复杂度<span class="arithmatex">\(O(n^2)\)</span>的 dp 做法, 虽然我们知道小的结构可以组合出大结构产生贡献, 但是不重不漏的转移方程似乎并不显然.</p>
+<p>常见的做法是钦定 1 所在的结构的大小, 如此进行转移即可不重不漏. 很妙的做法.</p>
 
 
 
@@ -5645,7 +5655,7 @@ F(x) &amp;= 1 + \sum_{i=1}^{\infty} \frac{G(x)^i}{i!} \\
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 17, 2025 14:47:55 UTC">December 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 3, 2026 06:34:56 UTC">January 3, 2026</span>
   </span>
 
     

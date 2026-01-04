@@ -11,32 +11,76 @@ nav:
   - 子集枚举: dp/子集枚举.md
   - 背包问题: dp/背包问题.md
 - 图论:
-  - 直径: graph/直径.md
   - dfn 序的妙用: graph/dfn.md
   - 最小环: graph/最小环.md
   - 最小生成树: graph/最小生成树.md
   - 树上背包: graph/树上背包.md
+  - 直径: graph/直径.md
   - 神秘构造: graph/神秘构造.md
 - 字符串:
   - Manacher: string/manacher.md
 - 数学:
-  - 牛顿迭代法: math/牛顿迭代法.md
   - gcd: math/gcd.md
-  - 容斥原理: math/容斥原理.md
   - wqs二分: math/wqs二分.md
-  - 数论分块: math/数论分块.md
-  - 和间隔有关的分治: math/和间隔有关的分治.md
-  - 线性规划: math/线性规划.md
   - 分母不存在逆元的计数: math/分母不存在逆元的计数.md
   - 单位根反演: math/单位根反演.md
   - 各种恒等式: math/各种恒等式.md
+  - 和间隔有关的分治: math/和间隔有关的分治.md
+  - 容斥原理: math/容斥原理.md
   - 拉格朗日插值: math/拉格朗日插值.md
   - 指数型生成函数: math/指数型生成函数.md
+  - 数论分块: math/数论分块.md
+  - 牛顿迭代法: math/牛顿迭代法.md
+  - 线性规划: math/线性规划.md
   - 高斯消元: math/高斯消元.md
 - 数据结构:
   - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
   - 并查集: ds/并查集.md
   - 线段树分治: ds/线段树分治.md
+- 比赛总结:
+  - Atcoder:
+    - ABC:
+      - ABC437: editorial/atcoder/abc/abc437.md
+  - CodeForces:
+    - Div2:
+      - Round 1052: editorial/codeforces/div2/round1052.md
+      - Round 1061: editorial/codeforces/div2/round1061.md
+      - Round 1064: editorial/codeforces/div2/round1064.md
+      - Round 1067: editorial/codeforces/div2/round1067.md
+      - Round 1070: editorial/codeforces/div2/round1070.md
+    - Div3:
+      - Round 1042: editorial/codeforces/div3/round1042.md
+    - Edu:
+      - Round 185: editorial/codeforces/edu/round185.md
+      - Round 186: editorial/codeforces/edu/round186.md
+  - 力扣:
+    - 双周赛:
+      - round173: editorial/leetcode/Biweekly/BiweeklyContest173.md
+    - 周赛:
+      - round481: editorial/leetcode/weekly/weekly481.md
+      - round483: editorial/leetcode/weekly/weekly483.md
+  - 牛客竞赛:
+    - 牛客周赛:
+      - Round 123: editorial/nowcoder/weekly/round123.md
+    - 牛客练习赛:
+      - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
+- 游记:
+  - 旅行的意义: travelogue/index.md
+  - 2022:
+    - cpho 复赛 合肥: travelogue/2022/cpho39.md
+  - 2024:
+    - 2024 CMC 济南: travelogue/2024/2024cmc济南.md
+    - 2024 ICPC 南京: travelogue/2024/2024icpc南京.md
+    - 2024 ICPC 杭州: travelogue/2024/2024icpc杭州.md
+  - 2025:
+    - 2025 CCPC 重庆: travelogue/2025/2025ccpc重庆.md
+    - 2025 ICPC 武汉: travelogue/2025/2025icpc武汉.md
+    - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
+    - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
+    - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
+    - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
+- 考研日记:
+  - 意向决定篇: kaoyan/index.md
 - 模版库:
   - DataStructure:
     - ST表: library/DataStructure/ST表.md
@@ -104,47 +148,6 @@ nav:
     - 后缀自动机(SAM): library/String/后缀自动机(SAM).md
     - 回文自动机: library/String/回文自动机.md
     - 字典树: library/String/字典树.md
-- 比赛总结:
-  - Atcoder:
-    - ABC:
-      - ABC437: editorial/atcoder/abc/abc437.md
-  - CodeForces:
-    - Div2:
-      - Round 1052: editorial/codeforces/div2/round1052.md
-      - Round 1061: editorial/codeforces/div2/round1061.md
-      - Round 1064: editorial/codeforces/div2/round1064.md
-      - Round 1067: editorial/codeforces/div2/round1067.md
-      - Round 1070: editorial/codeforces/div2/round1070.md
-    - Div3:
-      - Round 1042: editorial/codeforces/div3/round1042.md
-    - Edu:
-      - Round 185: editorial/codeforces/edu/round185.md
-      - Round 186: editorial/codeforces/edu/round186.md
-  - 力扣:
-    - 周赛:
-      - round437: editorial/leetcode/weekly/weekly481.md
-  - 牛客竞赛:
-    - 牛客周赛:
-      - Round 123: editorial/nowcoder/weekly/round123.md
-    - 牛客练习赛:
-      - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
-- 游记:
-  - 旅行的意义: travelogue/index.md
-  - 2022:
-    - cpho 复赛 合肥: travelogue/2022/cpho39.md
-  - 2024:
-    - 2024 CMC 济南: travelogue/2024/2024cmc济南.md
-    - 2024 ICPC 南京: travelogue/2024/2024icpc南京.md
-    - 2024 ICPC 杭州: travelogue/2024/2024icpc杭州.md
-  - 2025:
-    - 2025 CCPC 重庆: travelogue/2025/2025ccpc重庆.md
-    - 2025 ICPC 武汉: travelogue/2025/2025icpc武汉.md
-    - 2025 ICPC 沈阳: travelogue/2025/2025icpc沈阳.md
-    - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
-    - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
-    - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
-- 考研日记:
-  - 意向决定篇: kaoyan/index.md
 plugins:
 - search
 - git-revision-date-localized:
