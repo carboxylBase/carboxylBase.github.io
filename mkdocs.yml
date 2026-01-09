@@ -42,6 +42,8 @@ nav:
     - ABC:
       - ABC437: editorial/atcoder/abc/abc437.md
   - CodeForces:
+    - Div1+2:
+      - Hello 2026: editorial/codeforces/div1plus2/Hello2026.md
     - Div2:
       - Round 1052: editorial/codeforces/div2/round1052.md
       - Round 1061: editorial/codeforces/div2/round1061.md
