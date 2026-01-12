@@ -33,6 +33,7 @@ nav:
   - 牛顿迭代法: math/牛顿迭代法.md
   - 线性规划: math/线性规划.md
   - 高斯消元: math/高斯消元.md
+  - 关于平凡的计数: math/关于平方的计数.md
 - 数据结构:
   - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
   - 并查集: ds/并查集.md
@@ -41,6 +42,10 @@ nav:
   - Atcoder:
     - ABC:
       - ABC437: editorial/atcoder/abc/abc437.md
+      - ABC439: editorial/atcoder/abc/abc439.md
+      - ABC440: editorial/atcoder/abc/abc440.md
+    - ARC:
+      - ARC212: editorial/atcoder/arc/arc212.md
   - CodeForces:
     - Div1+2:
       - Hello 2026: editorial/codeforces/div1plus2/Hello2026.md
@@ -66,6 +71,8 @@ nav:
       - Round 123: editorial/nowcoder/weekly/round123.md
     - 牛客练习赛:
       - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
+    - 牛客挑战赛:
+      - Round 85: editorial/nowcoder/challenge/牛客挑战赛85.md
 - 游记:
   - 旅行的意义: travelogue/index.md
   - 2022:
