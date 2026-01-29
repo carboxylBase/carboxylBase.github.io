@@ -20,6 +20,7 @@ nav:
 - 字符串:
   - Manacher: string/manacher.md
 - 数学:
+  - 杜教筛: math/杜教筛.md
   - gcd: math/gcd.md
   - wqs二分: math/wqs二分.md
   - 分母不存在逆元的计数: math/分母不存在逆元的计数.md
