@@ -1,0 +1,10 @@
+{
+  "dirs": [
+    "docs/dp",
+    "docs/ds",
+    "docs/geometry",
+    "docs/graph",
+    "docs/math",
+    "docs/string"
+  ]
+}
