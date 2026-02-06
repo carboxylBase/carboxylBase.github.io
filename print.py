@@ -14,4 +14,4 @@ for d in cfg["dirs"]:
 with open("README.md", "w", encoding="utf8") as f:
     f.write("".join(out))
 
-# pandoc README.MD -o blog.pdf --mathjax -t html5 --pdf-engine=weasyprint
+# pandoc README.MD -o blog.pdf --pdf-engine=xelatex
