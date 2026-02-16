@@ -36,6 +36,7 @@ nav:
   - 高斯消元: math/高斯消元.md
   - 关于平凡的计数: math/关于平方的计数.md
 - 数据结构:
+  - FHQ-Treap: ds/FHQ-Treap.md
   - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
   - 并查集: ds/并查集.md
   - 线段树分治: ds/线段树分治.md
@@ -89,8 +90,6 @@ nav:
     - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
     - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
     - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
-- 考研日记:
-  - 意向决定篇: kaoyan/index.md
 - 模版库:
   - DataStructure:
     - ST表: library/DataStructure/ST表.md
