@@ -90,6 +90,9 @@ nav:
     - 2025 百度之星 北京: travelogue/2025/2025百度之星.md
     - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
     - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
+  - 2026:
+    - 2026 EC-Final: travelogue/2026/2026ECFinal杭州.md
+    - 2026 CACC: travelogue/2026/2026CACC.md
 - 模版库:
   - DataStructure:
     - ST表: library/DataStructure/ST表.md
