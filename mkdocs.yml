@@ -20,6 +20,8 @@ nav:
 - 字符串:
   - Manacher: string/manacher.md
 - 数学:
+  - 升幂引理: math/升幂引理.md
+  - Gale-Ryser 定理: math/Gale-Ryser 定理.md
   - 杜教筛: math/杜教筛.md
   - gcd: math/gcd.md
   - wqs二分: math/wqs二分.md
