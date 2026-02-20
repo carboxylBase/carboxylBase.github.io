@@ -18,14 +18,15 @@ nav:
   - 直径: graph/直径.md
   - 神秘构造: graph/神秘构造.md
 - 字符串:
+  - AC自动机: string/ACAM.md
   - Manacher: string/manacher.md
 - 数学:
-  - 升幂引理: math/升幂引理.md
   - Gale-Ryser 定理: math/Gale-Ryser 定理.md
-  - 杜教筛: math/杜教筛.md
   - gcd: math/gcd.md
   - wqs二分: math/wqs二分.md
+  - 关于平凡的计数: math/关于平方的计数.md
   - 分母不存在逆元的计数: math/分母不存在逆元的计数.md
+  - 升幂引理: math/升幂引理.md
   - 单位根反演: math/单位根反演.md
   - 各种恒等式: math/各种恒等式.md
   - 和间隔有关的分治: math/和间隔有关的分治.md
@@ -33,10 +34,10 @@ nav:
   - 拉格朗日插值: math/拉格朗日插值.md
   - 指数型生成函数: math/指数型生成函数.md
   - 数论分块: math/数论分块.md
+  - 杜教筛: math/杜教筛.md
   - 牛顿迭代法: math/牛顿迭代法.md
   - 线性规划: math/线性规划.md
   - 高斯消元: math/高斯消元.md
-  - 关于平凡的计数: math/关于平方的计数.md
 - 数据结构:
   - FHQ-Treap: ds/FHQ-Treap.md
   - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
@@ -73,10 +74,10 @@ nav:
   - 牛客竞赛:
     - 牛客周赛:
       - Round 123: editorial/nowcoder/weekly/round123.md
-    - 牛客练习赛:
-      - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
     - 牛客挑战赛:
       - Round 85: editorial/nowcoder/challenge/牛客挑战赛85.md
+    - 牛客练习赛:
+      - Round 146: editorial/nowcoder/practice/牛客练习赛146.md
 - 游记:
   - 旅行的意义: travelogue/index.md
   - 2022:
@@ -93,8 +94,8 @@ nav:
     - 2025 西安省赛: travelogue/2025/2025陕西省赛.md
     - 2025 西安邀请赛: travelogue/2025/2025西安邀请赛.md
   - 2026:
-    - 2026 EC-Final: travelogue/2026/2026ECFinal杭州.md
     - 2026 CACC: travelogue/2026/2026CACC.md
+    - 2026 EC-Final: travelogue/2026/2026ECFinal杭州.md
 - 模版库:
   - DataStructure:
     - ST表: library/DataStructure/ST表.md
