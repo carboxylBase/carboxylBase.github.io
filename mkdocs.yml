@@ -11,6 +11,7 @@ nav:
   - 子集枚举: dp/子集枚举.md
   - 背包问题: dp/背包问题.md
 - 图论:
+  - Kraft不等式: graph/Kraft不等式.md
   - dfn 序的妙用: graph/dfn.md
   - 最小环: graph/最小环.md
   - 最小生成树: graph/最小生成树.md
@@ -39,6 +40,7 @@ nav:
   - 线性规划: math/线性规划.md
   - 高斯消元: math/高斯消元.md
 - 数据结构:
+  - KD-Tree: ds/KD-Tree.md
   - FHQ-Treap: ds/FHQ-Treap.md
   - 可持久化线段树&字典树: ds/可持久化线段树&字典树.md
   - 并查集: ds/并查集.md
